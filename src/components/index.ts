@@ -1,3 +1,5 @@
-import ChangeMetadataTitleOnBlur from "@/components/ChangeMetadataTitleOnBlur";
+import ChangeMetadataTitleOnBlur from "@/components/core/ChangeMetadataTitleOnBlur";
+import NavigationPill from "@/components/core/NavigationPill";
+import HeroSection from "@/components/home/HeroSection";
 
-export { ChangeMetadataTitleOnBlur };
+export { ChangeMetadataTitleOnBlur, NavigationPill, HeroSection };
