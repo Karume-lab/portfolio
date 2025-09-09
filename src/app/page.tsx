@@ -1,7 +1,12 @@
-import { NavigationPill } from "@/components";
+import { NavigationPill, TechnologiesMarquee } from "@/components";
 
 const HomePage = () => {
-  return <NavigationPill />;
+  return (
+    <>
+      <NavigationPill />
+      <TechnologiesMarquee />
+    </>
+  );
 };
 
 export default HomePage;
