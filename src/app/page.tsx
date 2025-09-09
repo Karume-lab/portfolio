@@ -1,5 +1,7 @@
+import { NavigationPill } from "@/components";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <NavigationPill />;
 };
 
 export default HomePage;

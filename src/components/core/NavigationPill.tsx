@@ -26,7 +26,7 @@ const NAVIGATION_ITEMS: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#certifications", label: "Certifications", icon: Award },
   { href: "#projects", label: "Projects", icon: Code },
   { href: "#experience", label: "Experience", icon: Briefcase },
-  { href: "/contact", label: "Contact Me", icon: Mail },
+  { href: "#contact", label: "Contact Me", icon: Mail },
 ];
 
 const NavigationPill = () => {
