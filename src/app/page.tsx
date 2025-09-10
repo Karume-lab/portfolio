@@ -6,11 +6,11 @@ import {
 
 const HomePage = () => {
   return (
-    <>
+    <main className="space-y-8">
       <NavigationPill />
       <Certifications />
       <TechnologiesMarquee />
-    </>
+    </main>
   );
 };
 
