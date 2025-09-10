@@ -76,8 +76,8 @@ const Certifications = () => {
   };
 
   return (
-    <>
-      <SectionHeader title="where's the proof?" />
+    <section className="max-w-7xl mx-auto">
+      <SectionHeader title="WHERE'S THE PROOF?" />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {CERTIFICATIONS.map((cert) => (
           <Card key={cert.title} className="h-full flex flex-col">
@@ -146,7 +146,7 @@ const Certifications = () => {
           </div>
         </DialogContent>
       </Dialog>
-    </>
+    </section>
   );
 };
 

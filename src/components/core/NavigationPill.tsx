@@ -31,15 +31,15 @@ const NAVIGATION_ITEMS: { href: string; label: string; icon: LucideIcon }[] = [
 
 const NavigationPill = () => {
   return (
-    <NavigationMenu className="bg-primary/20 rounded-md p-2">
+    <NavigationMenu className="bg-primary rounded-md p-2">
       <NavigationMenuList>
         {NAVIGATION_ITEMS.map(({ href, label, icon: Icon }) => (
           <Tooltip key={href}>
             <TooltipTrigger>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href={href}>
-                    <Icon className="text-black" />
+                  <Link href={href} className="text-primary-foreground">
+                    <Icon />
                     <TooltipContent>
                       <h2>{label}</h2>
                     </TooltipContent>

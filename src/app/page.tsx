@@ -1,4 +1,5 @@
 import {
+  AboutMe,
   Certifications,
   NavigationPill,
   TechnologiesMarquee,
@@ -8,8 +9,9 @@ const HomePage = () => {
   return (
     <main className="space-y-8">
       <NavigationPill />
-      <Certifications />
+      <AboutMe />
       <TechnologiesMarquee />
+      <Certifications />
     </main>
   );
 };
