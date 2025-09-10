@@ -94,7 +94,7 @@ const TECHNOLOGIES: { logoPath: string; href: string; label: string }[] = [
   {
     href: "https://nodejs.org/",
     logoPath: "/technologies/node.png",
-    label: "Node JS",
+    label: "Node.js",
   },
   {
     href: "https://www.npmjs.com/",
@@ -109,12 +109,12 @@ const TECHNOLOGIES: { logoPath: string; href: string; label: string }[] = [
   {
     href: "https://react.dev/",
     logoPath: "/technologies/react.png",
-    label: "React JS",
+    label: "React.js",
   },
   {
     href: "https://nextjs.org/",
     logoPath: "/technologies/next.png",
-    label: "Next JS",
+    label: "Next.js",
   },
   {
     href: "https://tailwindcss.com/",
@@ -144,7 +144,7 @@ const TECHNOLOGIES: { logoPath: string; href: string; label: string }[] = [
   {
     href: "https://expressjs.com/",
     logoPath: "/technologies/express.png",
-    label: "Express JS",
+    label: "Express.js",
   },
   {
     href: "https://nginx.org/",
@@ -181,7 +181,7 @@ const TECHNOLOGIES: { logoPath: string; href: string; label: string }[] = [
 const TechnologiesMarquee = () => {
   const plugin = useRef(
     Autoscroll({
-      speed: 1,
+      speed: 0.5,
     })
   );
 
