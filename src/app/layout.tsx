@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/global.css";
+import AnimatedCursor from "react-animated-cursor";
 import { ChangeMetadataTitleOnBlur } from "@/components";
 
 const geistSans = Geist({
@@ -30,6 +31,13 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ChangeMetadataTitleOnBlur />
+        <AnimatedCursor
+          color="0, 0, 0"
+          innerSize={24}
+          outerSize={28}
+          outerScale={2}
+          trailingSpeed={10}
+        />
         {children}
       </body>
     </html>
