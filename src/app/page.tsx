@@ -1,7 +1,9 @@
 import {
   AboutMe,
   Certifications,
+  ExperienceTimeline,
   NavigationPill,
+  Projects,
   TechnologiesMarquee,
 } from "@/components";
 
@@ -12,6 +14,8 @@ const HomePage = () => {
       <AboutMe />
       <TechnologiesMarquee />
       <Certifications />
+      <ExperienceTimeline />
+      <Projects />
     </main>
   );
 };

@@ -3,6 +3,8 @@ import NavigationPill from "@/components/core/NavigationPill";
 import SectionHeader from "@/components/core/SectionHeader";
 import AboutMe from "@/components/home/AboutMe";
 import Certifications from "@/components/home/Certifications";
+import ExperienceTimeline from "@/components/home/ExperienceTimeline";
+import Projects from "@/components/home/Projects";
 import TechnologiesMarquee from "@/components/home/TechnologiesMarquee";
 
 export {
@@ -14,4 +16,6 @@ export {
   AboutMe,
   Certifications,
   TechnologiesMarquee,
+  ExperienceTimeline,
+  Projects,
 };
