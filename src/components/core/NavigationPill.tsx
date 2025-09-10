@@ -1,11 +1,12 @@
 import {
   Award,
-  BookOpenText,
   Briefcase,
   Code,
   Home,
   type LucideIcon,
   Mail,
+  Speech,
+  User,
 } from "lucide-react";
 import Link from "next/link";
 import {
@@ -22,10 +23,11 @@ import {
 
 const NAVIGATION_ITEMS: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "/", label: "Home", icon: Home },
-  { href: "#education", label: "Education", icon: BookOpenText },
+  { href: "#bio", label: "Bio", icon: User },
   { href: "#certifications", label: "Certifications", icon: Award },
-  { href: "#projects", label: "Projects", icon: Code },
   { href: "#experience", label: "Experience", icon: Briefcase },
+  { href: "#projects", label: "Projects", icon: Code },
+  { href: "#testimonials", label: "Testimonials", icon: Speech },
   { href: "#contact", label: "Contact Me", icon: Mail },
 ];
 
