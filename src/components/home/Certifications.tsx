@@ -12,60 +12,13 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-
-interface Certificate {
-  imagePath: string;
-  title: string;
-  description: string;
-  skills: string[];
-}
-
-const CERTIFICATIONS: Certificate[] = [
-  {
-    title: "ALX Software Engineering",
-    description:
-      "12-month intensive program covering full-stack development, networking, databases, and DevOps.",
-    imagePath: "/certifications/alx.png",
-    skills: [
-      "HTML5",
-      "CSS",
-      "JavaScript",
-      "Python",
-      "C",
-      "SQL",
-      "REST APIs",
-      "Django",
-      "Flask",
-      "Git",
-      "Docker",
-      "Bash",
-    ],
-  },
-  {
-    title: "Inter-University Hackathon",
-    description: "Certificate of Participation in ICP blockchain hackathon.",
-    imagePath: "/certifications/icp.png",
-    skills: [
-      "Blockchain Technology",
-      "ICP Ecosystem",
-      "azle Framework",
-      "DFX Development Tools",
-    ],
-  },
-  {
-    title: "Power Learn Project Hackathon I",
-    description:
-      "Participated in a web development hackathon focusing on Django framework.",
-    imagePath: "/certifications/power-hacks.png",
-    skills: ["Git", "HTML5", "CSS3", "Python", "Django"],
-  },
-];
+import { CERTIFICATIONS, type Certificate } from "@/data";
 
 const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const handleViewCert = (cert: (typeof CERTIFICATIONS)[0]) => {
+  const handleViewCert = (cert: Certificate) => {
     setSelectedCert(cert);
     setIsDialogOpen(true);
   };
@@ -81,12 +34,12 @@ const Certifications = () => {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {CERTIFICATIONS.map((cert) => (
           <Card key={cert.title} className="h-full flex flex-col">
-            <div className="relative h-48">
+            <div className="relative aspect-video mx-4">
               <Image
                 src={cert.imagePath}
                 alt={cert.title}
                 fill
-                className="object-contain"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
 

@@ -1,13 +1,3 @@
-import {
-  Award,
-  Briefcase,
-  Code,
-  Home,
-  type LucideIcon,
-  Mail,
-  Speech,
-  User,
-} from "lucide-react";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -20,16 +10,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
-const NAVIGATION_ITEMS: { href: string; label: string; icon: LucideIcon }[] = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "#bio", label: "Bio", icon: User },
-  { href: "#certifications", label: "Certifications", icon: Award },
-  { href: "#experience", label: "Experience", icon: Briefcase },
-  { href: "#projects", label: "Projects", icon: Code },
-  { href: "#testimonials", label: "Testimonials", icon: Speech },
-  { href: "#contact", label: "Contact Me", icon: Mail },
-];
+import { NAVIGATION_ITEMS } from "@/data";
 
 const NavigationPill = () => {
   return (
