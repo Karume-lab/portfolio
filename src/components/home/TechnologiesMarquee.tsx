@@ -55,7 +55,7 @@ const TechnologiesMarquee = () => {
                       height={44}
                       alt={`${label} logo`}
                       src={logoPath}
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300 rounded-md"
+                      className="object-contain hover-reveal rounded-md"
                     />
                   </Link>
                 </TooltipTrigger>

@@ -39,7 +39,7 @@ const Certifications = () => {
                 src={cert.imagePath}
                 alt={cert.title}
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="object-cover hover-reveal"
               />
             </div>
 
