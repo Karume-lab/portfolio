@@ -34,9 +34,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <AnimatedCursor
           color="0, 0, 0"
           innerSize={24}
-          outerSize={28}
+          outerSize={48}
           outerScale={2}
-          trailingSpeed={10}
+          trailingSpeed={8}
         />
         {children}
       </body>
