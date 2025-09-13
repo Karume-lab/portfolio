@@ -11,9 +11,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Rastuc",
     description: `
-Web app for doctors and patients.  
-Patients can book doctors, and doctors manage appointments.  
-Includes AI-powered search and admin dashboards.`,
+A full-stack healthcare platform connecting doctors and patients.  
+Patients can browse and book doctors with ease, while doctors manage their schedules, appointments, and records through intuitive dashboards.  
+The system also includes AI-powered search, analytics, and an admin portal for platform management.`,
     projectUrl: "https://www.rastuc.com/",
     thumbnailPath: "/projects/rastuc.png",
     technologies: [
@@ -31,11 +31,12 @@ Includes AI-powered search and admin dashboards.`,
     ],
   },
   {
-    title: "Rastuc Member Mobile App",
+    title: "Rastuc Member",
     description: `
-Mobile app for patients to book doctors and manage appointments.  
-Lightweight, optimized, and integrated with Rastuc web APIs.`,
-    thumbnailPath: "/projects/rastuc-mobile.png",
+A lightweight companion mobile app for patients using Rastuc.  
+Enables users to book doctors, view and manage their appointments, and access healthcare services on the go.  
+Optimized for performance, with smooth navigation and deep integration with Rastuc APIs.`,
+    thumbnailPath: "/projects/work-in-progress.png",
     projectUrl:
       "https://play.google.com/store/apps/details?id=com.rastuc_technologies.rastuc_patient",
     technologies: [
@@ -56,8 +57,9 @@ Lightweight, optimized, and integrated with Rastuc web APIs.`,
   {
     title: "Vault",
     description: `
-Blockchain-powered file storage platform (like Google Drive on Web3).  
-Users can securely upload, manage, and share files.`,
+A decentralized file storage platform built on blockchain technology.  
+Provides secure, tamper-proof storage where users can upload, organize, and share files with ownership guaranteed on Web3.  
+Think of it as a blockchain-powered alternative to Google Drive.`,
     thumbnailPath: "/projects/vault.png",
     gitHubUrl: "https://github.com/Karume-lab/Vault-FE",
     projectUrl: "https://github.com/Karume-lab/Vault-FE/blob/main/README.md",
@@ -72,16 +74,17 @@ Users can securely upload, manage, and share files.`,
   {
     title: "Taska",
     description: `
-Minimalist todo app with a clean interface and smooth interactions.`,
-    thumbnailPath: "/projects/taska.png",
+A minimalist to-do application designed for focus and simplicity.  
+Provides a distraction-free interface for creating, tracking, and managing tasks, with smooth animations and a clean design system.`,
+    thumbnailPath: "/projects/work-in-progress.png",
     gitHubUrl: "https://github.com/Karume-lab/taska",
     technologies: ["BNA UI", "Typescript"],
   },
   {
     title: "Sharahub",
     description: `
-Digital affiliate marketing platform.  
-Includes user authentication, affiliate tracking, and dashboards.`,
+A digital affiliate marketing platform enabling users to promote products and track referrals.  
+Includes authentication, affiliate dashboards, commission tracking, and reporting tools for marketers and businesses.`,
     thumbnailPath: "/projects/sharahub.png",
     projectUrl: "https://sharahub.vercel.app/",
     technologies: [
@@ -99,7 +102,8 @@ Includes user authentication, affiliate tracking, and dashboards.`,
   {
     title: "Kellian Enterprise",
     description: `
-Automotive garage website showcasing services and bookings.`,
+A professional automotive garage website showcasing services, bookings, and company information.  
+Built for speed, SEO, and responsiveness, giving customers a smooth experience while exploring offerings.`,
     thumbnailPath: "/projects/kellian-enterprise.png",
     projectUrl: "https://www.kellianenterprise.com/",
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
@@ -107,7 +111,8 @@ Automotive garage website showcasing services and bookings.`,
   {
     title: "Kids Beyond Limit",
     description: `
-NGO website supporting children with educational resources.`,
+An NGO website supporting children through educational programs and resources.  
+Highlights initiatives, shares stories, and provides a donation-friendly platform for supporters.`,
     thumbnailPath: "/projects/kids-beyond-limit.png",
     projectUrl: "https://www.kidsbeyondlimit.com/",
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
@@ -115,11 +120,10 @@ NGO website supporting children with educational resources.`,
   {
     title: "Tanuri",
     description: `
-Complete LPG (cooking gas) ordering and fulfillment ecosystem:  
-- Consumer Mobile App: users order and manage gas deliveries.  
-- Company Web App: staff fulfill and track customer orders.  
-- Backend: Django REST API with authentication and infra.`,
-    thumbnailPath: "/projects/tanuri.png",
+A complete LPG (cooking gas) ordering and delivery ecosystem.  
+Includes a consumer-facing mobile app for placing and managing gas orders, a company web app for staff to fulfill and track deliveries, and a secure Django REST API backend.  
+Covers the full lifecycle of order placement, payment, and fulfillment.`,
+    thumbnailPath: "/projects/work-in-progress.png",
     gitHubUrl: "https://github.com/Karume-lab/tanuri",
     technologies: [
       "React Native",

@@ -3,8 +3,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
-
 import SectionHeader from "@/components/core/SectionHeader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,18 +10,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PROJECTS } from "@/data";
 
 const Projects = () => {
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const containerRef = useRef<HTMLDivElement>(null);
-
   return (
     <section
       className="px-8 relative"
-      style={{ height: `${PROJECTS.length * 66}vh` }}
+      style={{ height: `${PROJECTS.length * 50}vh` }}
     >
       <div className="text-center py-2 sticky top-16">
         <SectionHeader title="TALK IS CHEAP. SHOW ME THE CODE." />
       </div>
-      <div ref={containerRef}>
+      <div>
         {PROJECTS.map(
           (
             {
@@ -38,12 +33,9 @@ const Projects = () => {
           ) => (
             <Card
               key={title}
-              ref={(el) => {
-                cardsRef.current[index] = el;
-              }}
-              className="sticky top-24 max-w-7xl mx-auto overflow-hidden flex flex-col md:flex-row rounded-2xl"
+              className="sticky top-24 max-w-7xl mx-auto overflow-hidden flex flex-col md:flex-row rounded-2xl h-96 p-0"
               style={{
-                transform: `translateY(${index * 60}px)`,
+                transform: `translateY(${index * 45}px)`,
               }}
             >
               <Image
@@ -51,9 +43,9 @@ const Projects = () => {
                 alt={title}
                 width={600}
                 height={400}
-                className="w-full h-48 md:h-full md:w-1/2 object-cover hover-to-reveal"
+                className="w-full md:h-full md:w-2/3 object-fill hover-to-reveal"
               />
-              <div className="flex flex-col justify-between flex-1">
+              <div className="flex flex-col flex-1 py-2">
                 <CardHeader className="flex flex-row items-start justify-between gap-4">
                   <CardTitle className="text-lg">{title}</CardTitle>
                   <div className="flex gap-2">
@@ -94,7 +86,7 @@ const Projects = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4 whitespace-pre-line">
+                  <p className="text-sm text-muted-foreground mb-4">
                     {description}
                   </p>
                   <div className="flex flex-wrap gap-2">
