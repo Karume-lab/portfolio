@@ -5,8 +5,7 @@ import {
   Home,
   type LucideIcon,
   Mail,
-  Speech,
-  User,
+  User
 } from "lucide-react";
 
 export interface NavigationItem {
@@ -21,6 +20,5 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { href: "#certifications", label: "Certifications", icon: Award },
   { href: "#experience", label: "Experience", icon: Briefcase },
   { href: "#projects", label: "Projects", icon: Code },
-  { href: "#testimonials", label: "Testimonials", icon: Speech },
   { href: "#contact", label: "Contact Me", icon: Mail },
 ];
