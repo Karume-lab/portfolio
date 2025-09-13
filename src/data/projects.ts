@@ -124,22 +124,4 @@ NGO website supporting children with educational resources.`,
     gitHubUrl: "https://github.com/Karume-lab/kids-beyond-limit",
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS"],
   },
-  {
-    title: "Platven",
-    description: `
-Real estate platform for browsing, posting, and managing properties.  
-Features messaging, dashboards, and authentication.`,
-    thumbnailPath: "/projects/platven.png",
-    gitHubUrl: "https://github.com/Karume-lab/platven",
-    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "NextAuth"],
-  },
-  {
-    title: "Sharehub",
-    description: `
-Platform for sharing dashboards and insights with teams.  
-Includes secure data storage and collaborative tools.`,
-    thumbnailPath: "/projects/sharehub.png",
-    gitHubUrl: "https://github.com/Karume-lab/sharehub",
-    technologies: ["Django", "DRF", "Next.js", "Tailwind CSS", "shadcn/ui"],
-  },
 ];
