@@ -37,7 +37,7 @@ const Projects = () => {
             index
           ) => (
             <Card
-              key={gitHubUrl}
+              key={title}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}
@@ -51,29 +51,31 @@ const Projects = () => {
                 alt={title}
                 width={600}
                 height={400}
-                className="w-full h-48 md:h-full md:w-1/2 object-cover"
+                className="w-full h-48 md:h-full md:w-1/2 object-cover hover-to-reveal"
               />
               <div className="flex flex-col justify-between flex-1">
                 <CardHeader className="flex flex-row items-start justify-between gap-4">
                   <CardTitle className="text-lg">{title}</CardTitle>
                   <div className="flex gap-2">
-                    <Button asChild size="sm" variant="outline">
-                      <Link
-                        href={gitHubUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                    {gitHubUrl ? (
+                      <Button asChild size="sm" variant="outline">
+                        <Link
+                          href={gitHubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-4 h-4 mr-1" />
+                          Code
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" disabled>
                         <Github className="w-4 h-4 mr-1" />
                         Code
-                      </Link>
-                    </Button>
-                    <Button
-                      asChild
-                      size="sm"
-                      disabled={!projectUrl}
-                      variant={projectUrl ? "default" : "outline"}
-                    >
-                      {projectUrl ? (
+                      </Button>
+                    )}
+                    {projectUrl ? (
+                      <Button asChild size="sm" variant="default">
                         <Link
                           href={projectUrl}
                           target="_blank"
@@ -82,13 +84,13 @@ const Projects = () => {
                           <ExternalLink className="w-4 h-4 mr-1" />
                           Live
                         </Link>
-                      ) : (
-                        <span className="flex items-center">
-                          <ExternalLink className="w-4 h-4 mr-1" />
-                          Live
-                        </span>
-                      )}
-                    </Button>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" disabled>
+                        <ExternalLink className="w-4 h-4 mr-1" />
+                        Live
+                      </Button>
+                    )}
                   </div>
                 </CardHeader>
                 <CardContent>

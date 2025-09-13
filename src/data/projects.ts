@@ -14,8 +14,8 @@ export const PROJECTS: Project[] = [
 Web app for doctors and patients.  
 Patients can book doctors, and doctors manage appointments.  
 Includes AI-powered search and admin dashboards.`,
+    projectUrl: "https://www.rastuc.com/",
     thumbnailPath: "/projects/rastuc.png",
-    gitHubUrl: "https://github.com/Karume-lab/rastuc",
     technologies: [
       "Next.js",
       "Apollo",
@@ -27,6 +27,7 @@ Includes AI-powered search and admin dashboards.`,
       "React Hook Form",
       "ESLint",
       "Prettier",
+      "Typescript",
     ],
   },
   {
@@ -35,7 +36,8 @@ Includes AI-powered search and admin dashboards.`,
 Mobile app for patients to book doctors and manage appointments.  
 Lightweight, optimized, and integrated with Rastuc web APIs.`,
     thumbnailPath: "/projects/rastuc-mobile.png",
-    gitHubUrl: "https://github.com/Karume-lab/rastuc-mobile",
+    projectUrl:
+      "https://play.google.com/store/apps/details?id=com.rastuc_technologies.rastuc_patient",
     technologies: [
       "React Native",
       "React Native Reusables",
@@ -45,10 +47,70 @@ Lightweight, optimized, and integrated with Rastuc web APIs.`,
       "Zod",
       "Zustand",
       "ESLint",
+      "Typescript",
       "Prettier",
       "React Hook Form",
       "React Native Actions Sheet",
     ],
+  },
+  {
+    title: "Vault",
+    description: `
+Blockchain-powered file storage platform (like Google Drive on Web3).  
+Users can securely upload, manage, and share files.`,
+    thumbnailPath: "/projects/vault.png",
+    gitHubUrl: "https://github.com/Karume-lab/Vault-FE",
+    projectUrl: "https://github.com/Karume-lab/Vault-FE/blob/main/README.md",
+    technologies: [
+      "React.js",
+      "Solidity",
+      "Tailwind CSS",
+      "Hardhat.js",
+      "Javascript",
+    ],
+  },
+  {
+    title: "Taska",
+    description: `
+Minimalist todo app with a clean interface and smooth interactions.`,
+    thumbnailPath: "/projects/taska.png",
+    gitHubUrl: "https://github.com/Karume-lab/taska",
+    technologies: ["BNA UI", "Typescript"],
+  },
+  {
+    title: "Sharahub",
+    description: `
+Digital affiliate marketing platform.  
+Includes user authentication, affiliate tracking, and dashboards.`,
+    thumbnailPath: "/projects/sharahub.png",
+    projectUrl: "https://sharahub.vercel.app/",
+    technologies: [
+      "Next.js",
+      "Zod",
+      "Mantine UI",
+      "CSS Modules",
+      "Django",
+      "DRF",
+      "NextAuth",
+      "Python",
+      "Typescript",
+    ],
+  },
+  {
+    title: "Kellian Enterprise",
+    description: `
+Automotive garage website showcasing services and bookings.`,
+    thumbnailPath: "/projects/kellian-enterprise.png",
+    projectUrl: "https://www.kellianenterprise.com/",
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
+  },
+  {
+    title: "Kids Beyond Limit",
+    description: `
+NGO website supporting children with educational resources.`,
+    thumbnailPath: "/projects/kids-beyond-limit.png",
+    projectUrl: "https://www.kidsbeyondlimit.com/",
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
   },
   {
     title: "Tanuri",
@@ -63,65 +125,16 @@ Complete LPG (cooking gas) ordering and fulfillment ecosystem:
       "React Native",
       "Expo",
       "BNA UI",
-      "Nativewind",
       "Zod",
       "Biome",
       "Next.js",
+      "Typescript",
+      "Python",
       "Mantine UI",
       "CSS Modules",
       "Django",
       "DRF",
       "Djoser",
     ],
-  },
-  {
-    title: "Vault",
-    description: `
-Blockchain-powered file storage platform (like Google Drive on Web3).  
-Users can securely upload, manage, and share files.`,
-    thumbnailPath: "/projects/vault.png",
-    gitHubUrl: "https://github.com/Karume-lab/vault",
-    technologies: ["React.js", "Solidity", "Tailwind CSS", "Hardhat.js"],
-  },
-  {
-    title: "Taska",
-    description: `
-Minimalist todo app with a clean interface and smooth interactions.`,
-    thumbnailPath: "/projects/taska.png",
-    gitHubUrl: "https://github.com/Karume-lab/taska",
-    technologies: ["BNA UI"],
-  },
-  {
-    title: "Sharahub",
-    description: `
-Digital affiliate marketing platform.  
-Includes user authentication, affiliate tracking, and dashboards.`,
-    thumbnailPath: "/projects/sharahub.png",
-    gitHubUrl: "https://github.com/Karume-lab/sharahub",
-    technologies: [
-      "Next.js",
-      "Zod",
-      "Mantine UI",
-      "CSS Modules",
-      "Django",
-      "DRF",
-      "NextAuth",
-    ],
-  },
-  {
-    title: "Kellian Enterprise",
-    description: `
-Automotive garage website showcasing services and bookings.`,
-    thumbnailPath: "/projects/kellian.png",
-    gitHubUrl: "https://github.com/Karume-lab/kellian-enterprise",
-    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS"],
-  },
-  {
-    title: "Kids Beyond Limit",
-    description: `
-NGO website supporting children with educational resources.`,
-    thumbnailPath: "/projects/kbl.png",
-    gitHubUrl: "https://github.com/Karume-lab/kids-beyond-limit",
-    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS"],
   },
 ];
