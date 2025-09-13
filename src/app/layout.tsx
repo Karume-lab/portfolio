@@ -32,10 +32,10 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       >
         <ChangeMetadataTitleOnBlur />
         <AnimatedCursor
-          color="0, 0, 0"
+          color="122, 55, 131"
           innerSize={24}
           outerSize={48}
-          outerScale={2}
+          outerScale={1.5}
           trailingSpeed={8}
         />
         {children}
