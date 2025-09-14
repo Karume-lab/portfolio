@@ -9,6 +9,7 @@ import {
   ScrollProgress,
 } from "@/components";
 import { Toaster } from "@/components/ui/sonner";
+import { TECHNOLOGIES } from "@/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,14 +22,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Karume",
-  description: "My awesome porfolio",
+  metadataBase: new URL("https://karume.vercel.app/"),
+  title: {
+    default: "Karume | Portfolio",
+    template: "%s | Karume",
+  },
+  description:
+    "Portfolio of Daniel Karume — full-stack developer, CS student, and mobile lead at Rastuc Technologies.",
+  keywords: [
+    "Daniel Karume",
+    "Portfolio",
+    "Full-stack Developer",
+    "Software Engineer",
+    ...TECHNOLOGIES.map(({ label }) => label),
+  ],
+  authors: [{ name: "Daniel Karume" }],
+  creator: "Daniel Karume",
+  publisher: "Daniel Karume",
+  openGraph: {
+    title: "Daniel Karume | Full-Stack Developer",
+    description:
+      "Explore my projects, experience, and skills as a passionate full-stack developer.",
+    url: "https://karume.vercel.app/",
+    siteName: "Daniel Karume's Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daniel Karume | Full-Stack Developer",
+    description:
+      "Portfolio of Daniel Karume — full-stack developer and tech enthusiast.",
+    creator: "@karume_lab",
+  },
 };
 
-interface RootLayoutProps
-  extends Readonly<{
-    children: React.ReactNode;
-  }> {}
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
