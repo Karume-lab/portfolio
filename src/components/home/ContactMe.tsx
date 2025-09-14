@@ -108,7 +108,7 @@ const ContactMe = () => {
               className="aspect-square size-20"
               asChild
             >
-              <Link href="tel:0712345678">
+              <Link href="tel:+254704150182">
                 <Phone className="size-5" />
               </Link>
             </Button>
@@ -118,7 +118,7 @@ const ContactMe = () => {
               className="aspect-square size-20"
               asChild
             >
-              <Link href="mailto:your.email@example.com">
+              <Link href="mailto:danielkarume.work@gmail.com">
                 <Mail className="size-5" />
               </Link>
             </Button>
@@ -129,7 +129,7 @@ const ContactMe = () => {
               asChild
             >
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/Karume-lab"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -143,7 +143,7 @@ const ContactMe = () => {
               asChild
             >
               <Link
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/daniel-karume"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -157,7 +157,7 @@ const ContactMe = () => {
               asChild
             >
               <Link
-                href="https://twitter.com/yourusername"
+                href="https://x.com/karume_lab"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -181,7 +181,11 @@ const ContactMe = () => {
                     Name <Asterisk size={12} />
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder="Your full name" {...field} />
+                    <Input
+                      type="text"
+                      placeholder="Your full name"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
