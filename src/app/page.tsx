@@ -3,6 +3,7 @@ import {
   Certifications,
   ContactMe,
   ExperienceTimeline,
+  Footer,
   NavigationPill,
   Projects,
   TechnologiesMarquee,
@@ -18,6 +19,7 @@ const HomePage = () => {
       <ExperienceTimeline />
       <Projects />
       <ContactMe />
+      <Footer />
     </main>
   );
 };
