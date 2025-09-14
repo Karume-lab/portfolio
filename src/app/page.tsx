@@ -4,7 +4,7 @@ import {
   ContactMe,
   ExperienceTimeline,
   Footer,
-  NavigationPill,
+  HeroSection,
   Projects,
   TechnologiesMarquee,
 } from "@/components";
@@ -12,7 +12,7 @@ import {
 const HomePage = () => {
   return (
     <main className="space-y-8" id="root">
-      <NavigationPill />
+      {/* <HeroSection /> */}
       <Bio />
       <TechnologiesMarquee />
       <Certifications />

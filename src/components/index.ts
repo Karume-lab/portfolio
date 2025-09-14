@@ -1,6 +1,8 @@
 import BackToTopButton from "@/components/core/BackToTopButton";
 import ChangeMetadataTitleOnBlur from "@/components/core/ChangeMetadataTitleOnBlur";
+import DownloadResumeButton from "@/components/core/DownloadResumeButton";
 import Footer from "@/components/core/Footer";
+import HeroSection from "@/components/core/HeroSection";
 import NavigationPill from "@/components/core/NavigationPill";
 import ScrollProgress from "@/components/core/ScrollProgress";
 import SectionHeader from "@/components/core/SectionHeader";
@@ -15,9 +17,11 @@ export {
   // core
   ChangeMetadataTitleOnBlur,
   NavigationPill,
+  HeroSection,
   SectionHeader,
   BackToTopButton,
   ScrollProgress,
+  DownloadResumeButton,
   Footer,
   // home
   Bio,

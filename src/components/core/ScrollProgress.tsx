@@ -88,7 +88,7 @@ const ScrollProgress = () => {
       aria-controls="root"
       tabIndex={0}
       onMouseDown={handleMouseDown}
-      className="fixed right-4 top-1/2 -translate-y-1/2 h-96 w-2 z-50 select-none"
+      className="fixed right-4 top-1/2 -translate-y-1/2 h-32 w-2 z-50 select-none"
     >
       <div className="relative h-full w-full bg-primary border border-primary rounded-full overflow-hidden">
         <div
