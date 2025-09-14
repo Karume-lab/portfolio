@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink, Github } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeader from "@/components/core/SectionHeader";
@@ -13,7 +14,7 @@ const Projects = () => {
   return (
     <section
       className="px-8 relative"
-      style={{ height: `${PROJECTS.length * 50}vh` }}
+      style={{ height: `${PROJECTS.length * 54}vh` }}
     >
       <div className="text-center py-2 sticky top-16">
         <SectionHeader title="TALK IS CHEAP. SHOW ME THE CODE." />
@@ -56,13 +57,13 @@ const Projects = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Github className="w-4 h-4 mr-1" />
+                          <SiGithub className="size-4 mr-1" />
                           Code
                         </Link>
                       </Button>
                     ) : (
                       <Button size="sm" variant="outline" disabled>
-                        <Github className="w-4 h-4 mr-1" />
+                        <SiGithub className="size-4 mr-1" />
                         Code
                       </Button>
                     )}
@@ -73,13 +74,13 @@ const Projects = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <ExternalLink className="w-4 h-4 mr-1" />
+                          <ExternalLink className="size-4 mr-1" />
                           Live
                         </Link>
                       </Button>
                     ) : (
                       <Button size="sm" variant="outline" disabled>
-                        <ExternalLink className="w-4 h-4 mr-1" />
+                        <ExternalLink className="size-4 mr-1" />
                         Live
                       </Button>
                     )}
