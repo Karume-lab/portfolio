@@ -81,8 +81,8 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="px-4 md:px-8 py-12 max-w-5xl mx-auto">
-      <div className="float-end">
+    <section className="px-4 md:px-8 py-12 max-w-5xl mx-auto" id="contact-me">
+      <div className="text-right">
         <SectionHeader title="HOW TO REACH ME?" />
       </div>
 

@@ -15,8 +15,9 @@ const Projects = () => {
     <section
       className="px-8 relative"
       style={{ height: `${PROJECTS.length * 54}vh` }}
+      id="projects"
     >
-      <div className="text-center py-2 sticky top-16">
+      <div className="text-center sticky top-16">
         <SectionHeader title="TALK IS CHEAP. SHOW ME THE CODE." />
       </div>
       <div>

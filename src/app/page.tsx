@@ -1,5 +1,5 @@
 import {
-  AboutMe,
+  Bio,
   Certifications,
   ContactMe,
   ExperienceTimeline,
@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <main className="space-y-8">
       <NavigationPill />
-      <AboutMe />
+      <Bio />
       <TechnologiesMarquee />
       <Certifications />
       <ExperienceTimeline />

@@ -1,12 +1,14 @@
 import SectionHeader from "@/components/core/SectionHeader";
 
-const AboutMe = () => {
+const Bio = () => {
   return (
-    <section className="bg-primary p-28">
-      <div className="max-w-7xl mx-auto text-white">
-        <SectionHeader title="WHO AM I?" />
-        <p className="leading-relaxed ">
-          I'm a passionate full-stack developer and computer science student at
+    <section className="bg-primary p-24 text-primary-foreground" id="bio">
+      <SectionHeader title="WHO AM I?" />
+      <div className="max-w-7xl mx-auto space-y-4">
+        <p className="line-through text-lg">I am Batman.</p>
+
+        <p className="leading-relaxed">
+          I'm a passionate full-stack developer and Computer Science student at
           JKUAT, currently leading mobile development at Rastuc Technologies. I
           bridge technical expertise with creative problem-solving to build
           impactful digital solutions. When I'm not coding, I'm mentoring fellow
@@ -18,4 +20,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Bio;

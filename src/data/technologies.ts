@@ -41,6 +41,16 @@ export const TECHNOLOGIES: Technology[] = [
     label: "GitHub Actions",
   },
   {
+    href: "https://soliditylang.org/",
+    logoPath: "/technologies/solidity.png",
+    label: "Solidity",
+  },
+  {
+    href: "https://hardhat.org/",
+    logoPath: "/technologies/hardhat.png",
+    label: "Hardhat.js",
+  },
+  {
     href: "https://www.gnu.org/software/bash/",
     logoPath: "/technologies/bash.png",
     label: "Bash Scripting",

@@ -29,7 +29,7 @@ const Certifications = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto" id="certifications">
       <SectionHeader title="WHERE'S THE PROOF?" />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {CERTIFICATIONS.map((cert) => (
