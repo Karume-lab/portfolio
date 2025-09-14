@@ -9,6 +9,41 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Vault",
+    description: `
+A decentralized file storage platform built on blockchain technology.  
+Provides secure, tamper-proof storage where users can upload, organize, and share files with ownership guaranteed on Web3.  
+Think of it as a blockchain-powered alternative to Google Drive.`,
+    thumbnailPath: "/projects/vault.png",
+    gitHubUrl: "https://github.com/Karume-lab/Vault-FE",
+    projectUrl: "https://github.com/Karume-lab/Vault-FE/blob/main/README.md",
+    technologies: [
+      "React.js",
+      "Solidity",
+      "Tailwind CSS",
+      "Hardhat.js",
+      "Javascript",
+    ],
+  },
+  {
+    title: "Kellian Enterprise",
+    description: `
+A professional automotive garage website showcasing services, bookings, and company information.  
+Built for speed, SEO, and responsiveness, giving customers a smooth experience while exploring offerings.`,
+    thumbnailPath: "/projects/kellian-enterprise.png",
+    projectUrl: "https://www.kellianenterprise.com/",
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
+  },
+  {
+    title: "Kids Beyond Limit",
+    description: `
+An NGO website supporting children through educational programs and resources.  
+Highlights initiatives, shares stories, and provides a donation-friendly platform for supporters.`,
+    thumbnailPath: "/projects/kids-beyond-limit.png",
+    projectUrl: "https://www.kidsbeyondlimit.com/",
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
+  },
+  {
     title: "Rastuc",
     description: `
 A full-stack healthcare platform connecting doctors and patients.  
@@ -55,23 +90,6 @@ Optimized for performance, with smooth navigation and deep integration with Rast
     ],
   },
   {
-    title: "Vault",
-    description: `
-A decentralized file storage platform built on blockchain technology.  
-Provides secure, tamper-proof storage where users can upload, organize, and share files with ownership guaranteed on Web3.  
-Think of it as a blockchain-powered alternative to Google Drive.`,
-    thumbnailPath: "/projects/vault.png",
-    gitHubUrl: "https://github.com/Karume-lab/Vault-FE",
-    projectUrl: "https://github.com/Karume-lab/Vault-FE/blob/main/README.md",
-    technologies: [
-      "React.js",
-      "Solidity",
-      "Tailwind CSS",
-      "Hardhat.js",
-      "Javascript",
-    ],
-  },
-  {
     title: "Taska",
     description: `
 A minimalist to-do application designed for focus and simplicity.  
@@ -99,24 +117,7 @@ Includes authentication, affiliate dashboards, commission tracking, and reportin
       "Typescript",
     ],
   },
-  {
-    title: "Kellian Enterprise",
-    description: `
-A professional automotive garage website showcasing services, bookings, and company information.  
-Built for speed, SEO, and responsiveness, giving customers a smooth experience while exploring offerings.`,
-    thumbnailPath: "/projects/kellian-enterprise.png",
-    projectUrl: "https://www.kellianenterprise.com/",
-    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
-  },
-  {
-    title: "Kids Beyond Limit",
-    description: `
-An NGO website supporting children through educational programs and resources.  
-Highlights initiatives, shares stories, and provides a donation-friendly platform for supporters.`,
-    thumbnailPath: "/projects/kids-beyond-limit.png",
-    projectUrl: "https://www.kidsbeyondlimit.com/",
-    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
-  },
+
   {
     title: "Tanuri",
     description: `
