@@ -44,6 +44,14 @@ Highlights initiatives, shares stories, and provides a donation-friendly platfor
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
   },
   {
+    title: "Tushirikiane",
+    description: `
+Collaboraution platform like turello but open source`,
+    thumbnailPath: "/projects/tushirikiane.png",
+    gitHubUrl: "https://github.com/gonpenta/tushirikiane/",
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
+  },
+  {
     title: "Rastuc",
     description: `
 A full-stack healthcare platform connecting doctors and patients.  
