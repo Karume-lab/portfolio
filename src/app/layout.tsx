@@ -1,8 +1,13 @@
+import "@/styles";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/app/global.css";
 import AnimatedCursor from "react-animated-cursor";
-import { ChangeMetadataTitleOnBlur } from "@/components";
+import {
+  BackToTopButton,
+  ChangeMetadataTitleOnBlur,
+  ScrollProgress,
+} from "@/components";
 import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
@@ -39,6 +44,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           outerScale={1.5}
           trailingSpeed={8}
         />
+        <ScrollProgress />
+        <BackToTopButton />
         <Toaster richColors />
         {children}
       </body>
