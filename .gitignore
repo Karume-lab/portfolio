@@ -8,4 +8,9 @@
 *.tsbuildinfo
 next-env.d.ts
 
+# notes
 MISC.md
+
+# env
+.env.*
+!.env.dist

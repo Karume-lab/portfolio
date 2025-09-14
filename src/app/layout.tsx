@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/global.css";
 import AnimatedCursor from "react-animated-cursor";
 import { ChangeMetadataTitleOnBlur } from "@/components";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           outerScale={1.5}
           trailingSpeed={8}
         />
+        <Toaster richColors />
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 import {
   AboutMe,
   Certifications,
+  ContactMe,
   ExperienceTimeline,
   NavigationPill,
   Projects,
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Certifications />
       <ExperienceTimeline />
       <Projects />
+      <ContactMe />
     </main>
   );
 };
