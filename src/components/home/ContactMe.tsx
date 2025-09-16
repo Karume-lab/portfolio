@@ -183,7 +183,7 @@ const ContactMe = () => {
                   <FormControl>
                     <Input
                       type="text"
-                      placeholder="Your full name"
+                      placeholder="John the Recruiter"
                       {...field}
                     />
                   </FormControl>
@@ -203,7 +203,7 @@ const ContactMe = () => {
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="hire.me@job.com"
                       {...field}
                     />
                   </FormControl>
