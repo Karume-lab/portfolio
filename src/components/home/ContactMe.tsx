@@ -81,10 +81,10 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="px-4 md:px-8 py-12 max-w-5xl mx-auto" id="contact-me">
-      <SectionHeader title="HOW TO REACH ME?" className="text-right" />
+    <section className="px-4 md:px-8 lg:py-12 max-w-5xl mx-auto" id="contact-me">
+      <SectionHeader title="HOW TO REACH ME?" className="text-center lg:text-right" />
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
           <div className="text-center">
             <Image
@@ -104,7 +104,7 @@ const ContactMe = () => {
             <Button
               variant="outline"
               size="lg"
-              className="aspect-square size-20"
+              className="aspect-square size-10"
               asChild
             >
               <Link href="tel:+254704150182">
@@ -114,7 +114,7 @@ const ContactMe = () => {
             <Button
               variant="outline"
               size="lg"
-              className="aspect-square size-20"
+              className="aspect-square size-10"
               asChild
             >
               <Link href="mailto:danielkarume.work@gmail.com">
@@ -124,7 +124,7 @@ const ContactMe = () => {
             <Button
               variant="outline"
               size="lg"
-              className="aspect-square size-20"
+              className="aspect-square size-10"
               asChild
             >
               <Link
@@ -138,7 +138,7 @@ const ContactMe = () => {
             <Button
               variant="outline"
               size="lg"
-              className="aspect-square size-20"
+              className="aspect-square size-10"
               asChild
             >
               <Link
@@ -152,7 +152,7 @@ const ContactMe = () => {
             <Button
               variant="outline"
               size="lg"
-              className="aspect-square size-20"
+              className="aspect-square size-10"
               asChild
             >
               <Link

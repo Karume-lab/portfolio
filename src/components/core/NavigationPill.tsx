@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ViewResumeButton from "@/components/core/ViewResumeButton";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -63,6 +64,8 @@ const NavigationPill = () => {
             </TooltipTrigger>
           </Tooltip>
         ))}
+        <div className="h-8 rounded-full w-0.5 bg-primary-foreground" />
+        <ViewResumeButton />
       </NavigationMenuList>
     </NavigationMenu>
   );

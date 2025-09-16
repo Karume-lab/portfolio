@@ -90,7 +90,7 @@ const ScrollProgress = () => {
       onMouseDown={handleMouseDown}
       className="fixed right-4 top-1/2 -translate-y-1/2 h-32 w-2 z-50 select-none"
     >
-      <div className="relative h-full w-full bg-[#7A3783] border border-[#7A3783] rounded-full overflow-hidden">
+      <div className="relative h-full w-full bg-primary border border-primary rounded-full overflow-hidden">
         <div
           className="absolute top-0 w-full bg-primary-foreground rounded-md transition-all duration-75"
           style={{ height: `${progress}%` }}

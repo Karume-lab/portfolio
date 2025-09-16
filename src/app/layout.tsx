@@ -8,7 +8,6 @@ import {
   ChangeMetadataTitleOnBlur,
   ScrollProgress,
 } from "@/components";
-import OpenInLargerScreenCard from "@/components/core/OpenInLargerScreenCard";
 import { Toaster } from "@/components/ui/sonner";
 import { TECHNOLOGIES } from "@/data";
 
@@ -69,22 +68,21 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ChangeMetadataTitleOnBlur />
-        <AnimatedCursor
-          color="122, 55, 131"
-          innerSize={24}
-          outerSize={48}
-          outerScale={1.5}
-          trailingSpeed={8}
-        />
-
-        <OpenInLargerScreenCard />
 
         <div className="hidden lg:block">
-          <ScrollProgress />
-          <BackToTopButton />
-          <Toaster richColors />
-          {children}
+          <AnimatedCursor
+            color="0, 0, 0"
+            innerSize={24}
+            outerSize={48}
+            outerScale={1.5}
+            trailingSpeed={8}
+          />
         </div>
+
+        <ScrollProgress />
+        <BackToTopButton />
+        <Toaster richColors />
+        {children}
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
+import { Code2, Globe, Server, Smartphone, Users } from "lucide-react";
 import type { TimelineElement } from "@/components/ui/timeline";
-import { Code2, Globe, MonitorSmartphone, Server, Users } from "lucide-react";
 
 export const experiences: TimelineElement[] = [
   {
@@ -38,7 +38,7 @@ Integrated APIs for real-time and static data flows.`,
     date: "May 2025 - Sept 2025",
     description: `
 Guided junior developers through code reviews and pair programming.  
-Improved team workflows with Jira and Trello.`,
+Improved team workflows with Trello.`,
     status: "in-progress",
     icon: <Users />,
   },
@@ -50,6 +50,6 @@ Improved team workflows with Jira and Trello.`,
 Led development of React Native apps using Nativewind.  
 Published apps to the Play Store and coached new contributors.`,
     status: "in-progress",
-    icon: <MonitorSmartphone />,
+    icon: <Smartphone />,
   },
 ];

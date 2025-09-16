@@ -29,12 +29,19 @@ const Certifications = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto" id="certifications">
+    <section
+      className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"
+      id="certifications"
+    >
       <SectionHeader title="WHERE'S THE PROOF?" />
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+      <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {CERTIFICATIONS.map((cert) => (
-          <Card key={cert.title} className="h-full flex flex-col">
-            <div className="relative aspect-video mx-4">
+          <Card
+            key={cert.title}
+            className="h-full flex flex-col shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div className="relative aspect-video mx-4 mt-4 rounded-md overflow-hidden">
               <Image
                 src={cert.imagePath}
                 alt={cert.title}
@@ -44,7 +51,7 @@ const Certifications = () => {
             </div>
 
             <CardHeader>
-              <CardTitle className="font-semibold text-center">
+              <CardTitle className="font-semibold text-center text-base sm:text-lg">
                 {cert.title}
               </CardTitle>
             </CardHeader>
@@ -55,7 +62,11 @@ const Certifications = () => {
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 {cert.skills.map((skill) => (
-                  <Badge key={skill} variant={"secondary"} className="text-xs">
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="text-xs sm:text-sm"
+                  >
                     {skill}
                   </Badge>
                 ))}
@@ -63,11 +74,11 @@ const Certifications = () => {
             </CardContent>
 
             <div className="p-4 pt-0 mt-auto">
-              <div className="flex justify-end">
+              <div className="flex justify-center">
                 <Button
                   size="sm"
                   onClick={() => handleViewCert(cert)}
-                  className="text-xs"
+                  className="text-xs sm:text-sm"
                 >
                   View Certificate
                 </Button>
@@ -78,11 +89,11 @@ const Certifications = () => {
       </div>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-2xl">
+        <DialogContent className="sm:max-w-3xl">
           <DialogHeader>
             <DialogTitle>{selectedCert?.title}</DialogTitle>
           </DialogHeader>
-          <div className="relative h-96 w-full">
+          <div className="relative h-[60vh] w-full">
             {selectedCert && (
               <Image
                 src={selectedCert.imagePath}
@@ -92,7 +103,7 @@ const Certifications = () => {
               />
             )}
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end mt-4">
             <Button variant="outline" onClick={handleCloseDialog}>
               Close
             </Button>

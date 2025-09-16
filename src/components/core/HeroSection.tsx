@@ -1,14 +1,71 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import NavigationPill from "@/components/core/NavigationPill";
 import SectionHeader from "@/components/core/SectionHeader";
-import ViewResumeButton from "@/components/core/ViewResumeButton";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { SKILLS, type Skill } from "@/data";
+
+interface FloatingIcon extends Skill {
+  id: number;
+  top: number;
+  left: number;
+  duration: number;
+  xRange: number;
+  yRange: number;
+}
 
 const HeroSection = () => {
+  const [floatingIcons, setFloatingIcons] = useState<FloatingIcon[]>([]);
+  const [activeId, setActiveId] = useState<number | null>(null);
+
+  useEffect(() => {
+    const count = 12;
+    const rows = 3;
+    const cols = 4;
+
+    const generated = Array.from({ length: count }).map((_, i) => {
+      const skill = SKILLS[i % SKILLS.length];
+
+      const row = Math.floor(i / cols);
+      const col = i % cols;
+
+      const baseTop = (row + 0.5) * (100 / rows);
+      const baseLeft = (col + 0.5) * (100 / cols);
+
+      return {
+        ...skill,
+        id: i,
+        top: baseTop + (Math.random() * 10 - 5),
+        left: baseLeft + (Math.random() * 10 - 5),
+        duration: 15 + Math.random() * 10,
+        xRange: Math.random() * 40 - 20,
+        yRange: Math.random() * 25 - 12,
+      };
+    });
+
+    for (let i = generated.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [generated[i], generated[j]] = [generated[j], generated[i]];
+    }
+
+    setFloatingIcons(generated);
+  }, []);
+
+  console.log(floatingIcons);
+
   return (
-    <header className="relative w-full h-screen">
+    <header className="relative w-full h-screen overflow-hidden">
       <NavigationPill />
+
       <Image
         alt="A photo of Daniel Karume"
         src="/core/me.png"
@@ -17,52 +74,53 @@ const HeroSection = () => {
         priority
       />
 
-      <Card className="absolute top-1/4 left-12 w-96 bg-primary-foreground/10 border-none backdrop-blur-2xl">
-        <CardContent>
-          <SectionHeader title="FRONTEND" className="text-center" />
-          <p className="text-sm font-semibold">
-            Designs responsive, accessible UIs with Next.js, Tailwind CSS, and
-            modern component libraries — blending usability with performance.
-          </p>
-        </CardContent>
-      </Card>
+      {floatingIcons.map(
+        ({
+          id,
+          title,
+          description,
+          icon: Icon,
+          top,
+          left,
+          duration,
+          xRange,
+          yRange,
+        }) => (
+          <motion.div
+            key={id}
+            className="absolute"
+            style={{ top: `${top}%`, left: `${left}%` }}
+            animate={{
+              x: [0, xRange, -xRange, 0],
+              y: [0, yRange, -yRange, 0],
+            }}
+            transition={{
+              duration: activeId === id ? duration * 3 : duration,
+              repeat: Infinity,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
+          >
+            <Popover onOpenChange={(open) => setActiveId(open ? id : null)}>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="default"
+                  size="icon"
+                  className="rounded-full w-14 h-14 shadow-lg bg-primary/80 hover:bg-primary"
+                >
+                  <Icon className="size-6 text-primary-foreground" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="max-w-sm bg-primary-foreground/10 backdrop-blur-xl border-none">
+                <SectionHeader title={title} className="text-center" />
+                <p className="text-sm font-semibold">{description}</p>
+              </PopoverContent>
+            </Popover>
+          </motion.div>
+        )
+      )}
 
-      <Card className="absolute top-1/4 right-12 w-96 bg-primary-foreground/10 border-none backdrop-blur-2xl">
-        <CardContent>
-          <SectionHeader title="BACKEND" className="text-center" />
-          <p className="text-sm font-semibold">
-            Builds scalable APIs and database solutions using Django, GraphQL,
-            and Express.js — ensuring reliability and efficiency in production.
-          </p>
-        </CardContent>
-      </Card>
-
-      <Card className="absolute bottom-1/4 left-12 w-96 bg-primary-foreground/10 border-none backdrop-blur-2xl">
-        <CardContent>
-          <SectionHeader title="MOBILE" className="text-center" />
-          <p className="text-sm font-semibold">
-            Ships cross-platform apps with React Native and Expo, delivering
-            seamless experiences on both iOS and Android devices.
-          </p>
-        </CardContent>
-      </Card>
-
-      <Card className="absolute bottom-1/4 right-12 w-96 bg-primary-foreground/10 border-none backdrop-blur-2xl">
-        <CardContent>
-          <SectionHeader title="BLOCKCHAIN" className="text-center" />
-          <p className="text-sm font-semibold">
-            Develops and tests Solidity smart contracts with Hardhat — creating
-            secure, transparent, and decentralized applications.
-          </p>
-        </CardContent>
-      </Card>
-
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-        <ChevronDown className="size-24 animate-bounce text-primary-foreground" />
-      </div>
-
-      <div className="absolute top-6 right-6 z-50">
-        <ViewResumeButton />
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
+        <ChevronDown className="size-16 md:size-20 lg:size-24 animate-bounce text-primary-foreground" />
       </div>
     </header>
   );
