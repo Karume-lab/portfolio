@@ -8,6 +8,7 @@ import {
   ChangeMetadataTitleOnBlur,
   ScrollProgress,
 } from "@/components";
+import OpenInLargerScreenCard from "@/components/core/OpenInLargerScreenCard";
 import { Toaster } from "@/components/ui/sonner";
 import { TECHNOLOGIES } from "@/data";
 
@@ -75,10 +76,15 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           outerScale={1.5}
           trailingSpeed={8}
         />
-        <ScrollProgress />
-        <BackToTopButton />
-        <Toaster richColors />
-        {children}
+
+        <OpenInLargerScreenCard />
+
+        <div className="hidden lg:block">
+          <ScrollProgress />
+          <BackToTopButton />
+          <Toaster richColors />
+          {children}
+        </div>
       </body>
     </html>
   );
