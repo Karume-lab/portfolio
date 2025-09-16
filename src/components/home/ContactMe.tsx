@@ -86,16 +86,17 @@ const ContactMe = () => {
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="space-y-6">
-          <div>
+          <div className="text-center">
             <Image
-              src={"/contact-me/call-me.png"}
-              alt=""
-              className="hover-to-reveal"
+              src="/contact-me/call-me.png"
+              alt="Contact illustration"
+              className="mx-auto hover-to-reveal"
               width={200}
               height={200}
             />
-            <p className="text-sm text-muted-foreground mt-2">
-              Feel free to reach out to me via email or connect on socials.
+            <p className="text-sm text-muted-foreground mt-4 max-w-sm mx-auto">
+              Let's connect! You can reach me directly via phone or email, or
+              find me on my socials.
             </p>
           </div>
 
