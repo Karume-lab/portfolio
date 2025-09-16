@@ -1,6 +1,6 @@
 import BackToTopButton from "@/components/core/BackToTopButton";
 import ChangeMetadataTitleOnBlur from "@/components/core/ChangeMetadataTitleOnBlur";
-import DownloadResumeButton from "@/components/core/DownloadResumeButton";
+import DownloadResumeButton from "@/components/core/ViewResumeButton";
 import Footer from "@/components/core/Footer";
 import HeroSection from "@/components/core/HeroSection";
 import NavigationPill from "@/components/core/NavigationPill";

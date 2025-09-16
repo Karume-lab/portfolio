@@ -11,8 +11,8 @@ import {
 
 const HomePage = () => {
   return (
-    <main className="space-y-8" id="root">
-      {/* <HeroSection /> */}
+    <main className="flex flex-col gap-y-5" id="root">
+      <HeroSection />
       <Bio />
       <TechnologiesMarquee />
       <Certifications />
