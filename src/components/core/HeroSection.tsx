@@ -70,7 +70,7 @@ const HeroSection = () => {
         alt="A photo of Daniel Karume"
         src="/core/me.png"
         fill
-        className="object-cover object-top grayscale-25"
+        className="object-cover object-top grayscale-75"
         priority
       />
 
