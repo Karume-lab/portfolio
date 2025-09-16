@@ -5,7 +5,7 @@ const Bio = () => {
     <section className="bg-primary p-24 text-primary-foreground" id="bio">
       <SectionHeader title="WHO AM I?" />
       <div className="max-w-7xl mx-auto space-y-4">
-        <p className="line-through text-lg">I am Batman.</p>
+        <p className="line-through text-lg">I'm Batman.</p>
 
         <p className="leading-relaxed">
           I'm a passionate full-stack developer and Computer Science student at
