@@ -5,60 +5,16 @@ export interface Technology {
 }
 
 export const TECHNOLOGIES: Technology[] = [
-  {
-    href: "https://www.atlassian.com/software/jira",
-    logoPath: "/technologies/jira.png",
-    label: "Jira",
-  },
-  {
-    href: "https://www.kernel.org/",
-    logoPath: "/technologies/linux.png",
-    label: "Linux",
-  },
+  // 🌐 Web Development (Core Frontend)
   {
     href: "https://developer.mozilla.org/docs/Web/HTML",
     logoPath: "/technologies/html.png",
     label: "HTML",
   },
   {
-    href: "https://trello.com/",
-    logoPath: "/technologies/trello.png",
-    label: "Trello",
-  },
-  {
-    href: "https://github.com/",
-    logoPath: "/technologies/github.png",
-    label: "GitHub",
-  },
-  {
-    href: "https://git-scm.com/",
-    logoPath: "/technologies/git.png",
-    label: "Git",
-  },
-  {
-    href: "https://github.com/features/actions",
-    logoPath: "/technologies/github-actions.png",
-    label: "GitHub Actions",
-  },
-  {
-    href: "https://soliditylang.org/",
-    logoPath: "/technologies/solidity.png",
-    label: "Solidity",
-  },
-  {
-    href: "https://hardhat.org/",
-    logoPath: "/technologies/hardhat.png",
-    label: "Hardhat.js",
-  },
-  {
-    href: "https://www.gnu.org/software/bash/",
-    logoPath: "/technologies/bash.png",
-    label: "Bash Scripting",
-  },
-  {
-    href: "https://www.python.org/",
-    logoPath: "/technologies/python.png",
-    label: "Python",
+    href: "https://developer.mozilla.org/docs/Web/CSS",
+    logoPath: "/technologies/css.png",
+    label: "CSS",
   },
   {
     href: "https://developer.mozilla.org/docs/Web/JavaScript",
@@ -69,41 +25,6 @@ export const TECHNOLOGIES: Technology[] = [
     href: "https://www.typescriptlang.org/",
     logoPath: "/technologies/typescript.png",
     label: "TypeScript",
-  },
-  {
-    href: "https://biomejs.dev/",
-    logoPath: "/technologies/biome.png",
-    label: "Biome",
-  },
-  {
-    href: "https://eslint.org/",
-    logoPath: "/technologies/eslint.png",
-    label: "ESLint",
-  },
-  {
-    href: "https://prettier.io/",
-    logoPath: "/technologies/prettier.png",
-    label: "Prettier",
-  },
-  {
-    href: "https://bun.sh/",
-    logoPath: "/technologies/bun.png",
-    label: "Bun",
-  },
-  {
-    href: "https://nodejs.org/",
-    logoPath: "/technologies/node.png",
-    label: "Node.js",
-  },
-  {
-    href: "https://www.npmjs.com/",
-    logoPath: "/technologies/npm.png",
-    label: "npm",
-  },
-  {
-    href: "https://www.docker.com/",
-    logoPath: "/technologies/docker.png",
-    label: "Docker",
   },
   {
     href: "https://react.dev/",
@@ -121,14 +42,19 @@ export const TECHNOLOGIES: Technology[] = [
     label: "Tailwind CSS",
   },
   {
-    href: "https://developer.mozilla.org/docs/Web/CSS",
-    logoPath: "/technologies/css.png",
-    label: "CSS",
+    href: "https://mantine.dev/",
+    logoPath: "/technologies/mantine.png",
+    label: "Mantine UI",
   },
   {
-    href: "https://www.djangoproject.com/",
-    logoPath: "/technologies/django.png",
-    label: "Django",
+    href: "https://ui.shadcn.com/",
+    logoPath: "/technologies/shadcn.png",
+    label: "shadcn/ui",
+  },
+  {
+    href: "https://ui.ahmedbna.com/",
+    logoPath: "/technologies/bna-ui.png",
+    label: "BNA UI",
   },
   {
     href: "https://zustand-demo.pmnd.rs/",
@@ -140,26 +66,8 @@ export const TECHNOLOGIES: Technology[] = [
     logoPath: "/technologies/zod.png",
     label: "Zod",
   },
-  {
-    href: "https://expressjs.com/",
-    logoPath: "/technologies/express.png",
-    label: "Express.js",
-  },
-  {
-    href: "https://nginx.org/",
-    logoPath: "/technologies/nginx.png",
-    label: "Nginx",
-  },
-  {
-    href: "https://mantine.dev/",
-    logoPath: "/technologies/mantine.png",
-    label: "Mantine UI",
-  },
-  {
-    href: "https://ui.shadcn.com/",
-    logoPath: "/technologies/shadcn.png",
-    label: "shadcn/ui",
-  },
+
+  // 📱 Mobile Development
   {
     href: "https://expo.dev/",
     logoPath: "/technologies/expo.png",
@@ -170,9 +78,126 @@ export const TECHNOLOGIES: Technology[] = [
     logoPath: "/technologies/react-native-reusables.png",
     label: "React Native Reusables",
   },
+
+  // ⚙️ Backend & Frameworks
   {
-    href: "https://ui.ahmedbna.com/",
-    logoPath: "/technologies/bna-ui.png",
-    label: "BNA UI",
+    href: "https://nodejs.org/",
+    logoPath: "/technologies/node.png",
+    label: "Node.js",
+  },
+  {
+    href: "https://expressjs.com/",
+    logoPath: "/technologies/express.png",
+    label: "Express.js",
+  },
+  {
+    href: "https://www.djangoproject.com/",
+    logoPath: "/technologies/django.png",
+    label: "Django",
+  },
+
+  // 🛠 Tooling & Package Managers
+  {
+    href: "https://www.npmjs.com/",
+    logoPath: "/technologies/npm.png",
+    label: "npm",
+  },
+  {
+    href: "https://bun.sh/",
+    logoPath: "/technologies/bun.png",
+    label: "Bun",
+  },
+  {
+    href: "https://git-scm.com/",
+    logoPath: "/technologies/git.png",
+    label: "Git",
+  },
+  {
+    href: "https://github.com/",
+    logoPath: "/technologies/github.png",
+    label: "GitHub",
+  },
+  {
+    href: "https://github.com/features/actions",
+    logoPath: "/technologies/github-actions.png",
+    label: "GitHub Actions",
+  },
+  {
+    href: "https://www.docker.com/",
+    logoPath: "/technologies/docker.png",
+    label: "Docker",
+  },
+  {
+    href: "https://nginx.org/",
+    logoPath: "/technologies/nginx.png",
+    label: "Nginx",
+  },
+  {
+    href: "https://www.postman.com/",
+    logoPath: "/technologies/postman.png",
+    label: "Postman",
+  },
+
+  // 🧹 Code Quality / Formatting
+  {
+    href: "https://biomejs.dev/",
+    logoPath: "/technologies/biome.png",
+    label: "Biome",
+  },
+  {
+    href: "https://eslint.org/",
+    logoPath: "/technologies/eslint.png",
+    label: "ESLint",
+  },
+  {
+    href: "https://prettier.io/",
+    logoPath: "/technologies/prettier.png",
+    label: "Prettier",
+  },
+
+  // 🔗 Blockchain & Web3
+  {
+    href: "https://soliditylang.org/",
+    logoPath: "/technologies/solidity.png",
+    label: "Solidity",
+  },
+  {
+    href: "https://hardhat.org/",
+    logoPath: "/technologies/hardhat.png",
+    label: "Hardhat.js",
+  },
+
+  // 🖥 OS, Scripting & Programming Languages
+  {
+    href: "https://archlinux.org/",
+    logoPath: "/technologies/arch-linux.png",
+    label: "i use arch btw",
+  },
+  {
+    href: "https://hyprland.org/",
+    logoPath: "/technologies/hyprland.png",
+    label: "Hyprland",
+  },
+  {
+    href: "https://www.gnu.org/software/bash/",
+    logoPath: "/technologies/bash.png",
+    label: "Bash Scripting",
+  },
+  {
+    href: "https://www.python.org/",
+    logoPath: "/technologies/python.png",
+    label: "Python",
+  },
+
+  // 📋 Project Management
+  {
+    href: "https://www.atlassian.com/software/jira",
+    logoPath: "/technologies/jira.png",
+    label: "Jira",
+  },
+  {
+    href: "https://trello.com/",
+    logoPath: "/technologies/trello.png",
+    label: "Trello",
   },
 ];
