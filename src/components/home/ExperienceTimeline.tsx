@@ -58,9 +58,7 @@ Mentored devs and deployed to Play Store.`,
 const ExperienceTimeline = () => {
   return (
     <section className="max-w-7xl mx-auto" id="experience">
-      <div className="text-center">
-        <SectionHeader title="MORE PROOF?" />
-      </div>
+      <SectionHeader title="MORE PROOF?" className="text-center" />
       <TimelineLayout items={experiences} size="lg" animate className="p-0" />
     </section>
   );

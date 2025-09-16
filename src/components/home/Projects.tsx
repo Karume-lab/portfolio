@@ -17,9 +17,10 @@ const Projects = () => {
       style={{ height: `${PROJECTS.length * 54}vh` }}
       id="projects"
     >
-      <div className="text-center sticky top-16">
-        <SectionHeader title="TALK IS CHEAP. SHOW ME THE CODE." />
-      </div>
+      <SectionHeader
+        title="TALK IS CHEAP. SHOW ME THE CODE."
+        className="text-center sticky top-16"
+      />
       <div>
         {PROJECTS.map(
           (
