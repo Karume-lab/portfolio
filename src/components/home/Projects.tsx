@@ -14,16 +14,16 @@ const Projects = () => {
       id="projects"
       className="
         px-4 md:px-8 
-        lg:h-[calc(54vh*var(--projects))]
+        xl:h-[calc(54vh*var(--projects))]
       "
       style={{ ["--projects" as string]: PROJECTS.length }}
     >
       <SectionHeader
         title="TALK IS CHEAP. SHOW ME THE CODE."
-        className="text-center lg:sticky lg:top-16"
+        className="text-center xl:sticky xl:top-16"
       />
 
-      <div className="space-y-8 lg:space-y-0">
+      <div className="space-y-8 xl:space-y-0">
         {PROJECTS.map(
           (
             {
@@ -39,9 +39,9 @@ const Projects = () => {
             <Card
               key={title}
               className="
-                max-w-7xl mx-auto overflow-hidden flex flex-col lg:flex-row lg:h-96 p-0
-                lg:sticky lg:top-24
-                lg:[transform:translateY(var(--y))]
+                max-w-7xl mx-auto overflow-hidden flex flex-col xl:flex-row xl:h-96 p-0
+                xl:sticky xl:top-24
+                xl:[transform:translateY(var(--y))]
               "
               style={{ ["--y" as string]: `${index * 45}px` }}
             >
@@ -52,14 +52,14 @@ const Projects = () => {
                 height={400}
                 className="
                   w-full h-48 sm:h-64 
-                  lg:h-full lg:w-2/3 
+                  xl:h-full xl:w-2/3 
                   object-fill hover-to-reveal
                 "
               />
 
               <div className="flex flex-col flex-1 py-2">
                 <CardHeader className="flex flex-row items-start justify-between gap-4">
-                  <CardTitle className="text-base sm:text-lg lg:text-xl">
+                  <CardTitle className="text-base sm:text-lg xl:text-xl">
                     {title}
                   </CardTitle>
                   <div className="flex gap-2 flex-wrap">
