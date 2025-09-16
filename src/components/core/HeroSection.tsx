@@ -21,8 +21,8 @@ const HeroSection = () => {
         <CardContent>
           <SectionHeader title="FRONTEND" className="text-center" />
           <p className="text-sm font-semibold">
-            Crafts clean, interactive interfaces where design meets
-            functionality on the user's screen.
+            Designs responsive, accessible UIs with Next.js, Tailwind CSS, and
+            modern component libraries — blending usability with performance.
           </p>
         </CardContent>
       </Card>
@@ -31,8 +31,8 @@ const HeroSection = () => {
         <CardContent>
           <SectionHeader title="BACKEND" className="text-center" />
           <p className="text-sm font-semibold">
-            Engineer architecting robust APIs, databases, and logic that power
-            real-world applications.
+            Builds scalable APIs and database solutions using Django, GraphQL,
+            and Express.js — ensuring reliability and efficiency in production.
           </p>
         </CardContent>
       </Card>
@@ -41,8 +41,8 @@ const HeroSection = () => {
         <CardContent>
           <SectionHeader title="MOBILE" className="text-center" />
           <p className="text-sm font-semibold">
-            Developer creating fluid, intuitive app experiences for users on the
-            go — iOS & Android.
+            Ships cross-platform apps with React Native and Expo, delivering
+            seamless experiences on both iOS and Android devices.
           </p>
         </CardContent>
       </Card>
@@ -51,8 +51,8 @@ const HeroSection = () => {
         <CardContent>
           <SectionHeader title="BLOCKCHAIN" className="text-center" />
           <p className="text-sm font-semibold">
-            Builder of decentralized systems that are transparent, secure, and
-            trustless by design.
+            Develops and tests Solidity smart contracts with Hardhat — creating
+            secure, transparent, and decentralized applications.
           </p>
         </CardContent>
       </Card>

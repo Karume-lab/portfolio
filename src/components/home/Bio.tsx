@@ -8,12 +8,12 @@ const Bio = () => {
         <p className="text-lg line-through">I'm Batman.</p>
 
         <p className="leading-relaxed">
-          I'm a passionate full-stack developer and Computer Science student at
-          JKUAT, currently leading mobile development at Rastuc Technologies. I
-          bridge technical expertise with creative problem-solving to build
-          impactful digital solutions. When I'm not coding, I'm mentoring fellow
-          developers or exploring new technologies that push the boundaries of
-          what's possible.
+          Hi, I'm <span className="font-semibold">Daniel Karume</span> — a
+          passionate full-stack developer and Computer Science student at JKUAT.
+          I combine technical expertise with creative problem-solving to build
+          impactful digital solutions. Beyond coding, I enjoy mentoring fellow
+          developers and experimenting with new technologies that push the
+          boundaries of what’s possible.
         </p>
       </div>
     </section>
