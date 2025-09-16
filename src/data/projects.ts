@@ -46,7 +46,7 @@ Highlights initiatives, shares stories, and provides a donation-friendly platfor
   {
     title: "Tushirikiane",
     description: `
-Collaboraution platform like turello but open source`,
+Collaboration platform like Trello but open source`,
     thumbnailPath: "/projects/tushirikiane.png",
     gitHubUrl: "https://github.com/gonpenta/tushirikiane/",
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS", "Typescript"],
@@ -71,6 +71,20 @@ The system also includes AI-powered search, analytics, and an admin portal for p
       "ESLint",
       "Prettier",
       "Typescript",
+    ],
+  },
+  {
+    title: "Loans",
+    description: `
+Loan application app`,
+    thumbnailPath: "/projects/loans.png",
+    projectUrl: "https://loans.starbasemedia.co.ke/",
+    technologies: [
+      "Next.js",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Typescript",
+      "NextAuth",
     ],
   },
   {
