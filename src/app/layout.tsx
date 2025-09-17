@@ -7,6 +7,7 @@ import {
   ChangeMetadataTitleOnBlur,
   ScrollProgress,
 } from "@/components";
+import OpenInLargeScreenPopover from "@/components/core/OpenInLargeScreenAlert";
 import SEOConfig, { metadataConfig } from "@/components/core/SEOConfig";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -47,6 +48,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         </div>
         <ScrollProgress />
         <BackToTopButton />
+        <OpenInLargeScreenPopover />
         <Toaster richColors />
         {children}
       </body>

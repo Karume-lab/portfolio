@@ -17,7 +17,7 @@ export const SKILLS: Skill[] = [
   {
     title: "TUTORIAL",
     description:
-      "Tap any floating icon to learn more about that skill. Each button reveals a short description inside a popover window.",
+      "Tap any floating icon to learn more about that skill. They are 5 in total, including this one and each button reveals a short description.",
     icon: Pointer,
   },
   {

@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 export const metadataConfig: Metadata = {
   metadataBase: new URL("https://karume.vercel.app/"),
   title: {
-    default: "Daniel Karume | Portfolio",
-    template: "%s | Daniel Karume",
+    default: "Karume | Portfolio",
+    template: "%s | Karume",
   },
   description:
     "Portfolio of Daniel Karume — full-stack developer, CS student, and mobile developer. Specializing in React.js, Next.js, and React Native.",
