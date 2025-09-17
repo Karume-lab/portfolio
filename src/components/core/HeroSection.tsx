@@ -55,7 +55,6 @@ const HeroSection = () => {
         alt="A photo of Daniel Karume"
         src={MePNG}
         fill
-        quality={100}
         className="object-cover object-top grayscale-75"
         priority
       />
