@@ -28,29 +28,15 @@ const HeroSection = () => {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   useEffect(() => {
-    const count = 12;
-    const rows = 3;
-    const cols = 4;
-
-    const generated = Array.from({ length: count }).map((_, i) => {
-      const skill = SKILLS[i % SKILLS.length];
-
-      const row = Math.floor(i / cols);
-      const col = i % cols;
-
-      const baseTop = (row + 0.5) * (100 / rows);
-      const baseLeft = (col + 0.5) * (100 / cols);
-
-      return {
-        ...skill,
-        id: i,
-        top: baseTop + (Math.random() * 10 - 5),
-        left: baseLeft + (Math.random() * 10 - 5),
-        duration: 15 + Math.random() * 10,
-        xRange: Math.random() * 40 - 20,
-        yRange: Math.random() * 25 - 12,
-      };
-    });
+    const generated = SKILLS.map((skill, i) => ({
+      ...skill,
+      id: i,
+      top: Math.random() * 90,
+      left: Math.random() * 90,
+      duration: 15 + Math.random() * 10,
+      xRange: Math.random() * 40 - 20,
+      yRange: Math.random() * 25 - 12,
+    }));
 
     for (let i = generated.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -59,8 +45,6 @@ const HeroSection = () => {
 
     setFloatingIcons(generated);
   }, []);
-
-  console.log(floatingIcons);
 
   return (
     <header className="relative w-full h-screen overflow-hidden">

@@ -2,6 +2,7 @@ import {
   Code2,
   type LucideIcon,
   Network,
+  Pointer,
   Server,
   Smartphone,
 } from "lucide-react";
@@ -13,6 +14,12 @@ export interface Skill {
 }
 
 export const SKILLS: Skill[] = [
+  {
+    title: "TUTORIAL",
+    description:
+      "Tap any floating icon to learn more about that skill. Each button reveals a short description inside a popover window.",
+    icon: Pointer,
+  },
   {
     title: "FRONTEND",
     description:
