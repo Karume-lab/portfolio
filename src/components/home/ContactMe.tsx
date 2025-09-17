@@ -23,6 +23,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+import CallMePNG from "~/public/contact-me/call-me.png";
+
 const contactMeSchema = z.object({
   name: z.string().min(1, "Please enter your name"),
   email: z.string().email("Please enter a valid email address"),
@@ -81,18 +83,25 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="px-4 md:px-8 lg:py-12 max-w-5xl mx-auto" id="contact-me">
-      <SectionHeader title="HOW TO REACH ME?" className="text-center lg:text-right" />
+    <section
+      className="px-4 md:px-8 lg:py-12 max-w-5xl mx-auto"
+      id="contact-me"
+    >
+      <SectionHeader
+        title="HOW TO REACH ME?"
+        className="text-center lg:text-right"
+      />
 
       <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
           <div className="text-center">
             <Image
-              src="/contact-me/call-me.png"
+              src={CallMePNG}
               alt="Contact illustration"
               className="mx-auto hover-to-reveal"
               width={200}
               height={200}
+              priority
             />
             <p className="text-sm text-muted-foreground mt-4 max-w-sm mx-auto">
               Let's connect! You can reach me directly via phone or email, or

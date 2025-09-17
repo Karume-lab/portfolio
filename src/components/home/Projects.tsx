@@ -50,6 +50,7 @@ const Projects = () => {
                 alt={title}
                 width={600}
                 height={400}
+                priority
                 className="
                   w-full h-48 sm:h-64 
                   xl:h-full xl:w-2/3 

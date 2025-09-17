@@ -54,6 +54,8 @@ const TechnologiesMarquee = () => {
                       width={44}
                       height={44}
                       alt={`${label} logo`}
+                      priority
+                      quality={100}
                       src={logoPath}
                       className="object-contain hover-to-reveal rounded-md"
                     />

@@ -46,6 +46,7 @@ const Certifications = () => {
                 src={cert.imagePath}
                 alt={cert.title}
                 fill
+                priority
                 className="object-cover hover-to-reveal"
               />
             </div>
