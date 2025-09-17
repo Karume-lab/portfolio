@@ -40,7 +40,7 @@ const TechnologiesMarquee = () => {
           {TECHNOLOGIES.map(({ href, logoPath, label }) => (
             <CarouselItem
               key={href}
-              className="basis-1/2 sm:basis-1/4 md:basis-1/6 lg:basis-1/12 flex items-center justify-center"
+              className="basis-1/3 sm:basis-1/4 md:basis-1/6 lg:basis-1/12 flex items-center justify-center"
             >
               <Tooltip>
                 <TooltipTrigger asChild>
