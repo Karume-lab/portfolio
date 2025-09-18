@@ -29,10 +29,10 @@ const BackToTopButton = () => {
   return (
     <Button
       onClick={scrollToTop}
-      className="fixed bottom-5 right-1 rounded-full z-50 duration-300 animate-in fade-in zoom-in"
+      className="fixed bottom-5 right-1 rounded-full z-50 size-10 duration-300 animate-in fade-in zoom-in"
       size="icon"
     >
-      <ChevronUp className="size-5" />
+      <ChevronUp className="size-8" />
     </Button>
   );
 };

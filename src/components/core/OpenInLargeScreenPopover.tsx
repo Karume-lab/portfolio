@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Info } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -25,23 +26,30 @@ const OpenInLargeScreenPopover = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-5 left-2 z-50 animate-in fade-in duration-300">
+    <div className="fixed bottom-6 left-4 z-50 animate-in fade-in duration-300">
       <Popover>
         <PopoverTrigger asChild>
-          <Button
-            variant="outline"
-            size="icon"
-            className="rounded-full w-10 h-10 p-2"
-            aria-label="Info"
+          <motion.div
+            animate={{ scale: [1, 1.15, 1] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            className="relative"
           >
-            <Info className="w-5 h-5" />
-          </Button>
+            <span className="absolute inset-0 rounded-full bg-primary/40 blur-md animate-pulse" />
+
+            <Button
+              variant="default"
+              size="icon"
+              className="relative rounded-full size-10 text-primary-foreground"
+            >
+              <Info className="size-8" />
+            </Button>
+          </motion.div>
         </PopoverTrigger>
-        <PopoverContent className="max-w-xs bg-primary-foreground/10 backdrop-blur-xl border-none">
+        <PopoverContent className="max-w-xs bg-primary-foreground/10 backdrop-blur-xl border-none shadow-xl rounded-xl">
           <p className="text-sm font-medium p-2">
             I noticed you are using a small screen. It would be a shame for you
             to miss the hover effects and easter eggs,{" "}
-            <span className="font-semibold">
+            <span className="font-semibold text-primary">
               especially if you are a recruiter
             </span>
             ! Try opening it on a larger screen for the best experience.

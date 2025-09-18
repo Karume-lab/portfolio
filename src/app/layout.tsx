@@ -7,7 +7,7 @@ import {
   ChangeMetadataTitleOnBlur,
   ScrollProgress,
 } from "@/components";
-import OpenInLargeScreenPopover from "@/components/core/OpenInLargeScreenAlert";
+import OpenInLargeScreenPopover from "@/components/core/OpenInLargeScreenPopover";
 import SEOConfig, { metadataConfig } from "@/components/core/SEOConfig";
 import { Toaster } from "@/components/ui/sonner";
 
