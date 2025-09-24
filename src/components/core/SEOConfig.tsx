@@ -9,12 +9,11 @@ export const metadataConfig: Metadata = {
     template: "%s | Karume",
   },
   description:
-    "Portfolio of Daniel Karume — full-stack developer, CS student, and mobile developer. Specializing in React.js, Next.js, and React Native.",
+    "Portfolio of Daniel Karume — Software Developer. Specializing in React.js, Next.js, and React Native.",
   keywords: [
     "Daniel Karume",
     "Portfolio",
-    "Full-stack Developer",
-    "Software Engineer",
+    "Software Developer",
     "Computer Science Student",
     "Mobile Developer",
     "React Developer",
@@ -28,9 +27,9 @@ export const metadataConfig: Metadata = {
   publisher: "Daniel Karume",
 
   openGraph: {
-    title: "Daniel Karume | Full-Stack Developer & CS Student",
+    title: "Daniel Karume | Software Developer",
     description:
-      "Explore my projects, experience, and skills as a passionate full-stack developer and mobile developer.",
+      "Explore my projects, experience, and skills as a passionate software developer.",
     url: "https://karume.vercel.app/",
     siteName: "Daniel Karume's Portfolio",
     locale: "en_US",
@@ -40,16 +39,15 @@ export const metadataConfig: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Daniel Karume - Full-Stack Developer Portfolio",
+        alt: "Daniel Karume - Software Developer Portfolio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Karume | Full-Stack Developer",
-    description:
-      "Portfolio of Daniel Karume — full-stack and developer, CS student.",
+    title: "Daniel Karume | Software Developer",
+    description: "Portfolio of Daniel Karume — Software Developer.",
     creator: "@karume_lab",
     images: ["/opengraph-image.png"],
   },
@@ -80,7 +78,7 @@ const SEOConfig = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Daniel Karume",
-    description: "Full-stack and developer, CS student",
+    description: "Software Developer",
     url: "https://karume.vercel.app",
     image: "https://karume.vercel.app/core/me.png",
     sameAs: [
@@ -88,7 +86,7 @@ const SEOConfig = () => {
       "https://linkedin.com/in/daniel-karume",
       "https://twitter.com/karume_lab",
     ],
-    jobTitle: "Full-Stack Developer",
+    jobTitle: "Software Developer",
     worksFor: {
       "@type": "Organization",
       name: "Rastuc Technologies",
@@ -114,8 +112,7 @@ const SEOConfig = () => {
     name: "Daniel Karume Portfolio",
     alternateName: "Daniel Karume",
     url: "https://karume.vercel.app",
-    description:
-      "Portfolio website showcasing full-stack development projects and skills",
+    description: "Portfolio website showcasing projects and skills",
     author: {
       "@type": "Person",
       name: "Daniel Karume",
