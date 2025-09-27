@@ -14,7 +14,7 @@ const Projects = () => {
       id="projects"
       className="
         px-4 md:px-8 
-        xl:h-[calc(54vh*var(--projects))]
+        xl:h-[calc(55vh*var(--projects))]
       "
       style={{ ["--projects" as string]: PROJECTS.length }}
     >
