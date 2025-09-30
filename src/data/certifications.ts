@@ -27,6 +27,20 @@ export const CERTIFICATIONS: Certificate[] = [
     ],
   },
   {
+    title: "KeHMIS III Project Bootcamp",
+    description:
+      "Participated in a bootcamp focused on innovative solutions to public health challenges using eHealth and Artificial Intelligence in Kenya.",
+    imagePath: "/certifications/kehmis.png",
+    skills: [
+      "Python",
+      "REST APIs",
+      "Django",
+      "eHealth",
+      "AI in Healthcare",
+      "Public Health",
+    ],
+  },
+  {
     title: "Inter-University Hackathon",
     description: "Certificate of Participation in ICP blockchain hackathon.",
     imagePath: "/certifications/icp.png",
