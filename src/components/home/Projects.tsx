@@ -14,16 +14,20 @@ const Projects = () => {
       id="projects"
       className="
         px-4 md:px-8 
-        xl:h-[calc(55vh*var(--projects))]
+        py-12
       "
-      style={{ ["--projects" as string]: PROJECTS.length }}
     >
       <SectionHeader
         title="TALK IS CHEAP. SHOW ME THE CODE."
-        className="text-center xl:sticky xl:top-16"
+        className="text-center mb-12"
       />
 
-      <div className="space-y-8 xl:space-y-0">
+      <div
+        className="
+          grid gap-8
+          sm:grid-cols-2
+        "
+      >
         {PROJECTS.map(
           (
             {
@@ -39,28 +43,23 @@ const Projects = () => {
             <Card
               key={title}
               className="
-                max-w-7xl mx-auto overflow-hidden flex flex-col xl:flex-row xl:h-96 p-0
-                xl:sticky xl:top-24
-                xl:[transform:translateY(var(--y))]
+                overflow-hidden flex flex-col
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1 p-0
               "
-              style={{ ["--y" as string]: `${index * 45}px` }}
             >
-              <Image
-                src={thumbnailPath}
-                alt={title}
-                width={600}
-                height={400}
-                priority
-                className="
-                  w-full h-48 sm:h-64 
-                  xl:h-full xl:w-2/3 
-                  object-fill hover-to-reveal
-                "
-              />
+              <div className="relative w-full h-96">
+                <Image
+                  src={thumbnailPath}
+                  alt={title}
+                  fill
+                  className="object-cover"
+                  priority={index < 2}
+                />
+              </div>
 
-              <div className="flex flex-col flex-1 py-2">
-                <CardHeader className="flex flex-row items-start justify-between gap-4">
-                  <CardTitle className="text-base sm:text-lg xl:text-xl">
+              <div className="flex flex-col flex-1 p-4">
+                <CardHeader className="p-0 mb-3 flex flex-row items-start justify-between">
+                  <CardTitle className="text-base sm:text-lg">
                     {title}
                   </CardTitle>
                   <div className="flex gap-2 flex-wrap">
@@ -101,8 +100,8 @@ const Projects = () => {
                   </div>
                 </CardHeader>
 
-                <CardContent>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
+                <CardContent className="p-0">
+                  <p className="text-sm text-muted-foreground mb-4">
                     {description}
                   </p>
                   <div className="flex flex-wrap gap-2">

@@ -1,11 +1,10 @@
 import {
   Bio,
   Certifications,
-  ContactMe,
   ExperienceTimeline,
-  Footer,
   HeroSection,
   Projects,
+  ReachOut,
   TechnologiesMarquee,
 } from "@/components";
 
@@ -20,8 +19,7 @@ const HomePage = () => {
       <Certifications />
       <ExperienceTimeline />
       <Projects />
-      <ContactMe />
-      <Footer />
+      <ReachOut />
     </main>
   );
 };

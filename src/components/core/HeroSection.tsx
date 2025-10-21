@@ -104,9 +104,7 @@ const HeroSection = () => {
         )
       )}
 
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-        <ChevronDown className="size-16 md:size-20 lg:size-24 animate-bounce text-primary-foreground" />
-      </div>
+   
     </header>
   );
 };

@@ -8,10 +8,11 @@ import ScrollProgress from "@/components/core/ScrollProgress";
 import SectionHeader from "@/components/core/SectionHeader";
 import Bio from "@/components/home/Bio";
 import Certifications from "@/components/home/Certifications";
-import ContactMe from "@/components/home/ContactMe";
+import ContactMeFormDialog from "@/components/home/ContactMeDialog";
 import ExperienceTimeline from "@/components/home/ExperienceTimeline";
 import Projects from "@/components/home/Projects";
 import TechnologiesMarquee from "@/components/home/TechnologiesMarquee";
+import ReachOut from "@/components/home/ReachOut";
 
 export {
   // core
@@ -29,5 +30,6 @@ export {
   TechnologiesMarquee,
   ExperienceTimeline,
   Projects,
-  ContactMe,
+  ContactMeFormDialog,
+  ReachOut,
 };

@@ -20,5 +20,5 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { href: "#certifications", label: "Certifications", icon: Award },
   { href: "#experience", label: "Experience", icon: Briefcase },
   { href: "#projects", label: "Projects", icon: Code },
-  { href: "#contact-me", label: "Contact Me", icon: Mail },
+  { href: "#reach-out", label: "Reach Out", icon: Mail },
 ];

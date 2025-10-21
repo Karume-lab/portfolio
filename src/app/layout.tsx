@@ -5,6 +5,7 @@ import AnimatedCursor from "react-animated-cursor";
 import {
   BackToTopButton,
   ChangeMetadataTitleOnBlur,
+  Footer,
   ScrollProgress,
 } from "@/components";
 import OpenInLargeScreenPopover from "@/components/core/OpenInLargeScreenPopover";
@@ -51,6 +52,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <OpenInLargeScreenPopover />
         <Toaster richColors />
         {children}
+        <Footer />
       </body>
     </html>
   );
