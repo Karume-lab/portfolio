@@ -52,7 +52,7 @@ const Projects = () => {
                   src={thumbnailPath}
                   alt={title}
                   fill
-                  className="object-cover"
+                  className="object-fill"
                   priority={index < 2}
                 />
               </div>

@@ -5,6 +5,7 @@ import {
   HeroSection,
   Projects,
   ReachOut,
+  RecommendationLetters,
   TechnologiesMarquee,
 } from "@/components";
 
@@ -18,6 +19,7 @@ const HomePage = () => {
       <TechnologiesMarquee />
       <Certifications />
       <ExperienceTimeline />
+      <RecommendationLetters />
       <Projects />
       <ReachOut />
     </main>

@@ -13,6 +13,7 @@ import ExperienceTimeline from "@/components/home/ExperienceTimeline";
 import Projects from "@/components/home/Projects";
 import TechnologiesMarquee from "@/components/home/TechnologiesMarquee";
 import ReachOut from "@/components/home/ReachOut";
+import RecommendationLetters from "./home/RecommendationLetters";
 
 export {
   // core
@@ -32,4 +33,5 @@ export {
   Projects,
   ContactMeFormDialog,
   ReachOut,
+  RecommendationLetters,
 };
