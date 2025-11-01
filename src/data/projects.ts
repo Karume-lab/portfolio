@@ -14,8 +14,9 @@ export const PROJECTS: Project[] = [
 A complete LPG (cooking gas) ordering and delivery ecosystem.  
 Includes a consumer-facing mobile app for placing and managing gas orders, a company web app for staff to fulfill and track deliveries, and a secure Django REST API backend.  
 Covers the full lifecycle of order placement, payment, and fulfillment.`,
-    thumbnailPath: "/projects/work-in-progress.png",
+    thumbnailPath: "/projects/tanuri.png",
     gitHubUrl: "https://github.com/Karume-lab/tanuri",
+    projectUrl: "https://tanuri.vercel.app/",
     technologies: [
       "React Native",
       "Expo",

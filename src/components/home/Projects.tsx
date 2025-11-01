@@ -44,7 +44,7 @@ const Projects = () => {
               key={title}
               className="
                 overflow-hidden flex flex-col
-                transition-all duration-300 hover:shadow-lg hover:-translate-y-1 p-0
+                transition-all duration-300 p-0
               "
             >
               <div className="relative w-full h-96">

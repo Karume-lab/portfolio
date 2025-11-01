@@ -1,15 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card";
-
 const Footer = () => {
   return (
-    <footer className="text-center mx-auto max-w-xl my-2">
-      <Card className="bg-primary text-primary-foreground">
-        <CardContent>
-          Designed and Made with{" "}
-          <span className="inline-block animate-bounce">🗿</span>, by yours
-          truly (me).
-        </CardContent>
-      </Card>
+    <footer className="text-center text-primary-foreground py-12 bg-primary">
+      Designed and Made with{" "}
+      <span className="inline-block animate-bounce">🗿</span>, by yours truly
+      (me).
     </footer>
   );
 };
