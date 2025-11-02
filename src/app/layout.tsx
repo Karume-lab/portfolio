@@ -6,6 +6,7 @@ import {
   BackToTopButton,
   ChangeMetadataTitleOnBlur,
   Footer,
+  NavigationPill,
   ScrollProgress,
 } from "@/components";
 import OpenInLargeScreenPopover from "@/components/core/OpenInLargeScreenPopover";
@@ -36,7 +37,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        id="root"
       >
+        <NavigationPill />
         <ChangeMetadataTitleOnBlur />
         <div className="hidden lg:block">
           <AnimatedCursor
@@ -51,7 +54,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <BackToTopButton />
         <OpenInLargeScreenPopover />
         <Toaster richColors />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

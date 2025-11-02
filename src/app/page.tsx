@@ -11,7 +11,7 @@ import {
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col gap-y-10" id="root">
+    <div className="flex flex-col gap-y-10">
       <div>
         <HeroSection />
         <Bio />
@@ -22,7 +22,7 @@ const HomePage = () => {
       <RecommendationLetters />
       <Projects />
       <ReachOut />
-    </main>
+    </div>
   );
 };
 

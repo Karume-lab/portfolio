@@ -1,9 +1,11 @@
+import type { Route } from "next";
+
 export interface Project {
   title: string;
   description: string;
   thumbnailPath: string;
-  gitHubUrl?: string;
-  projectUrl?: string;
+  gitHubUrl?: Route;
+  projectUrl?: Route;
   technologies: string[];
 }
 
@@ -34,6 +36,28 @@ Covers the full lifecycle of order placement, payment, and fulfillment.`,
     ],
   },
   {
+    title: "Tawi",
+    description: `
+An interactive climate education platform that gamifies learning about trees and environmental conservation.  
+Users complete lessons, earn points (Matawi), collect badges, and join a growing community committed to real-world impact.  
+Includes a responsive web app built with modern UI, and a backend designed to support progress tracking, streaks, and partner-driven environmental actions.`,
+    thumbnailPath: "/projects/tawi.png",
+    gitHubUrl: "https://github.com/Karume-lab/tawi",
+    projectUrl: "https://tawi-ke.vercel.app/",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Mantine UI",
+      "Zod",
+      "Biome",
+      "CSS Modules",
+      "PostgreSQL",
+      "React Hook Form",
+      "Typescript",
+      "oRPC",
+    ],
+  },
+  {
     title: "Sharahub",
     description: `
 A digital affiliate marketing platform enabling users to promote products and track referrals.  
@@ -50,6 +74,50 @@ Includes authentication, affiliate dashboards, commission tracking, and reportin
       "NextAuth",
       "Python",
       "Typescript",
+    ],
+  },
+  {
+    title: "Rastuc",
+    description: `
+A full-stack healthcare platform connecting doctors and patients.  
+Patients can browse and book doctors with ease, while doctors manage their schedules, appointments, and records through intuitive dashboards.  
+The system also includes AI-powered search, analytics, and an admin portals for management.`,
+    projectUrl: "https://www.rastuc.com/",
+    thumbnailPath: "/projects/rastuc.png",
+    technologies: [
+      "Next.js",
+      "Apollo",
+      "Tailwind CSS",
+      "Mantine UI",
+      "shadcn/ui",
+      "CSS Modules",
+      "Zod",
+      "React Hook Form",
+      "ESLint",
+      "Prettier",
+      "Typescript",
+    ],
+  },
+  {
+    title: "ORPC Todo",
+    description: `
+  A minimal full-stack Todo app.
+  Implements a type-safe RPC architecture for seamless client-server communication and a simple SQLite database for persistent storage.  
+  Includes a dedicated page for sending emails using Nodemailer, demonstrating server-side actions and input validation with Zod.`,
+    thumbnailPath: "/projects/orpc-todo-app.png",
+    gitHubUrl: "https://github.com/Karume-lab/orpc-todo-app",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "ORPC",
+      "React",
+      "Tailwind CSS",
+      "Drizzle ORM",
+      "Better-SQLite3",
+      "Zod",
+      "React Query",
+      "Nodemailer",
+      "Biome",
     ],
   },
   {
@@ -102,28 +170,7 @@ Designed with accessibility and trust in mind, this platform helps individuals g
       "NextAuth",
     ],
   },
-  {
-    title: "Rastuc",
-    description: `
-A full-stack healthcare platform connecting doctors and patients.  
-Patients can browse and book doctors with ease, while doctors manage their schedules, appointments, and records through intuitive dashboards.  
-The system also includes AI-powered search, analytics, and an admin portals for management.`,
-    projectUrl: "https://www.rastuc.com/",
-    thumbnailPath: "/projects/rastuc.png",
-    technologies: [
-      "Next.js",
-      "Apollo",
-      "Tailwind CSS",
-      "Mantine UI",
-      "shadcn/ui",
-      "CSS Modules",
-      "Zod",
-      "React Hook Form",
-      "ESLint",
-      "Prettier",
-      "Typescript",
-    ],
-  },
+
   {
     title: "Tushirikiane",
     description: `

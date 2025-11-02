@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Mail, MessageCircle, MousePointer2 } from "lucide-react";
-import ContactMeFormDialog from "@/components/home/ContactMeDialog";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import SectionHeader from "@/components/core/SectionHeader";
+import ContactMeFormDialog from "@/components/home/ContactMeDialog";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const contactTags = [
   { label: "Website Development", x: "20%", y: "20%" },
@@ -42,7 +42,7 @@ const ReachOut = () => {
               const isActive = i === activeIndex;
               return (
                 <motion.div
-                  key={i}
+                  key={tag.label}
                   className="absolute"
                   style={{
                     left: tag.x,

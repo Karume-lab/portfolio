@@ -1,10 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import NavigationPill from "@/components/core/NavigationPill";
 import SectionHeader from "@/components/core/SectionHeader";
 import { Button } from "@/components/ui/button";
 import {
@@ -49,8 +47,6 @@ const HeroSection = () => {
 
   return (
     <header className="relative w-full h-screen overflow-hidden">
-      <NavigationPill />
-
       <Image
         alt="A photo of Daniel Karume"
         src={MePNG}
@@ -101,10 +97,8 @@ const HeroSection = () => {
               </PopoverContent>
             </Popover>
           </motion.div>
-        )
+        ),
       )}
-
-   
     </header>
   );
 };

@@ -36,7 +36,7 @@ export const metadataConfig: Metadata = {
     type: "profile",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://karume.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Daniel Karume - Software Developer Portfolio",
@@ -49,7 +49,7 @@ export const metadataConfig: Metadata = {
     title: "Daniel Karume | Software Developer",
     description: "Portfolio of Daniel Karume — Software Developer.",
     creator: "@karume_lab",
-    images: ["/opengraph-image.png"],
+  images: ["https://karume.vercel.app/twitter-image.png"],
   },
 
   robots: {

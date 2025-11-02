@@ -1,7 +1,10 @@
+"use client";
+
 import { SiGithub } from "@icons-pack/react-simple-icons";
-import { ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SectionHeader from "@/components/core/SectionHeader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,6 +12,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PROJECTS } from "@/data";
 
 const Projects = () => {
+  const path = usePathname();
+
   return (
     <section
       id="projects"
@@ -28,7 +33,7 @@ const Projects = () => {
           sm:grid-cols-2
         "
       >
-        {PROJECTS.map(
+        {PROJECTS.slice(0, path.includes("projects") ? PROJECTS.length : 4).map(
           (
             {
               projectUrl,
@@ -38,21 +43,15 @@ const Projects = () => {
               thumbnailPath,
               title,
             },
-            index
+            index,
           ) => (
-            <Card
-              key={title}
-              className="
-                overflow-hidden flex flex-col
-                transition-all duration-300 p-0
-              "
-            >
+            <Card key={title} className="overflow-hidden flex flex-col p-0">
               <div className="relative w-full h-96">
                 <Image
                   src={thumbnailPath}
                   alt={title}
                   fill
-                  className="object-fill"
+                  className="object-cover"
                   priority={index < 2}
                 />
               </div>
@@ -114,9 +113,18 @@ const Projects = () => {
                 </CardContent>
               </div>
             </Card>
-          )
+          ),
         )}
       </div>
+
+      {!path.includes("projects") && (
+        <Button asChild className="float-right my-4" variant={"link"}>
+          <Link href={"/projects"}>
+            <span>View more projects</span>
+            <ArrowRight />
+          </Link>
+        </Button>
+      )}
     </section>
   );
 };
