@@ -1,6 +1,8 @@
+import type { Route } from "next";
+
 export interface Technology {
   logoPath: string;
-  href: string;
+  href: Route;
   label: string;
 }
 
