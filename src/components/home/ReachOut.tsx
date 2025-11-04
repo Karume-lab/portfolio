@@ -32,7 +32,7 @@ const ReachOut = () => {
   return (
     <section
       id="reach-out"
-      className="relative overflow-hidden bg-primary/80 px-4 sm:px-8 lg:px-20 py-16 sm:py-20"
+      className="relative overflow-hidden bg-primary/90 text-primary-foreground px-4 sm:px-8 lg:px-20 py-16 sm:py-20"
     >
       <SectionHeader title="HOW TO REACH ME?" className="text-center" />
       <div className="flex flex-col lg:flex-row items-center justify-between">

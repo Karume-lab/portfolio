@@ -34,26 +34,17 @@ const Projects = () => {
         "
       >
         {PROJECTS.slice(0, path.includes("projects") ? PROJECTS.length : 4).map(
-          (
-            {
-              projectUrl,
-              description,
-              gitHubUrl,
-              technologies,
-              thumbnailPath,
-              title,
-            },
-            index,
-          ) => (
-            <Card key={title} className="overflow-hidden flex flex-col p-0">
-              <div className="relative w-full h-96">
-                <Image
-                  src={thumbnailPath}
-                  alt={title}
-                  fill
-                  className="object-cover"
-                  priority={index < 2}
-                />
+          ({
+            projectUrl,
+            description,
+            gitHubUrl,
+            technologies,
+            thumbnailPath,
+            title,
+          }) => (
+            <Card key={title} className="overflow-hidden flex flex-col p-0 hover-to-reveal">
+              <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
+                <Image src={thumbnailPath} alt={title} fill priority />
               </div>
 
               <div className="flex flex-col flex-1 p-4">

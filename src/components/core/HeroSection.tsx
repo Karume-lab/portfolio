@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { SKILLS, type Skill } from "@/data";
-import MePNG from "~/public/core/me.png";
+import MeWEBP from "~/public/core/me.webp";
 
 interface FloatingIcon extends Skill {
   id: number;
@@ -49,7 +49,7 @@ const HeroSection = () => {
     <header className="relative w-full h-screen overflow-hidden">
       <Image
         alt="A photo of Daniel Karume"
-        src={MePNG}
+        src={MeWEBP}
         fill
         className="object-cover object-top grayscale-75"
         priority

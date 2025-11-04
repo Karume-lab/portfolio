@@ -7,7 +7,7 @@ const generateRobots = (): MetadataRoute.Robots => {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://karume.vercel.app/sitemap.xml",
+    sitemap: `${process.env.NEXT_PUBLIC_APP_URL}/sitemap.xml`,
   };
 };
 

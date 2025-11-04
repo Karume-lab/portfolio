@@ -1,47 +1,45 @@
 import type { MetadataRoute } from "next";
 
 const generateSiteMap = (): MetadataRoute.Sitemap => {
-  const baseUrl = "https://karume.vercel.app";
-
   return [
     {
-      url: baseUrl,
+      url: process.env.NEXT_PUBLIC_APP_URL ?? "",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${baseUrl}/#bio`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/#bio`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#experience`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/#experience`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/projects`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/projects`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/#projects`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/#projects`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/#certifications`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/#certifications`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/#contact-me`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/#contact-me`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.6,

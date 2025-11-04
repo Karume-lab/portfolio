@@ -3,7 +3,7 @@ import "@/styles";
 import type { Metadata } from "next";
 
 export const metadataConfig: Metadata = {
-  metadataBase: new URL("https://karume.vercel.app/"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? ""),
   title: {
     default: "Karume | Portfolio",
     template: "%s | Karume",
@@ -22,7 +22,7 @@ export const metadataConfig: Metadata = {
     "Kenya Developer",
     ...TECHNOLOGIES.map(({ label }) => label),
   ],
-  authors: [{ name: "Daniel Karume", url: "https://karume.vercel.app" }],
+  authors: [{ name: "Daniel Karume", url: process.env.NEXT_PUBLIC_APP_URL }],
   creator: "Daniel Karume",
   publisher: "Daniel Karume",
 
@@ -30,18 +30,10 @@ export const metadataConfig: Metadata = {
     title: "Daniel Karume | Software Developer",
     description:
       "Explore my projects, experience, and skills as a passionate software developer.",
-    url: "https://karume.vercel.app/",
+    url: process.env.NEXT_PUBLIC_APP_URL,
     siteName: "Daniel Karume's Portfolio",
     locale: "en_US",
     type: "profile",
-    images: [
-      {
-        url: "https://karume.vercel.app/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Daniel Karume - Software Developer Portfolio",
-      },
-    ],
   },
 
   twitter: {
@@ -49,7 +41,6 @@ export const metadataConfig: Metadata = {
     title: "Daniel Karume | Software Developer",
     description: "Portfolio of Daniel Karume — Software Developer.",
     creator: "@karume_lab",
-  images: ["https://karume.vercel.app/twitter-image.png"],
   },
 
   robots: {
@@ -67,7 +58,7 @@ export const metadataConfig: Metadata = {
   },
 
   alternates: {
-    canonical: "https://karume.vercel.app/",
+    canonical: process.env.NEXT_PUBLIC_APP_URL,
   },
 
   category: "technology",
@@ -79,8 +70,8 @@ const SEOConfig = () => {
     "@type": "Person",
     name: "Daniel Karume",
     description: "Software Developer",
-    url: "https://karume.vercel.app",
-    image: "https://karume.vercel.app/core/me.png",
+    url: process.env.NEXT_PUBLIC_APP_URL,
+    image: `${process.env.NEXT_PUBLIC_APP_URL}/core/me.png`,
     sameAs: [
       "https://github.com/Karume-lab",
       "https://linkedin.com/in/daniel-karume",
@@ -111,7 +102,7 @@ const SEOConfig = () => {
     "@type": "WebSite",
     name: "Daniel Karume Portfolio",
     alternateName: "Daniel Karume",
-    url: "https://karume.vercel.app",
+    url: process.env.NEXT_PUBLIC_APP_URL,
     description: "Portfolio website showcasing projects and skills",
     author: {
       "@type": "Person",

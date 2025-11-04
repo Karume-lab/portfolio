@@ -39,7 +39,7 @@ const Certifications = () => {
         {CERTIFICATIONS.map((cert) => (
           <Card
             key={cert.title}
-            className="h-full flex flex-col shadow-md hover:shadow-lg transition-shadow"
+            className="h-full flex flex-col shadow-md hover:shadow-lg transition-shadow hover-to-reveal"
           >
             <div className="relative aspect-video mx-4 mt-4 rounded-md overflow-hidden">
               <Image
@@ -47,7 +47,7 @@ const Certifications = () => {
                 alt={cert.title}
                 fill
                 priority
-                className="object-fit hover-to-reveal"
+                className="object-fit"
               />
             </div>
 
