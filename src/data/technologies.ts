@@ -39,6 +39,11 @@ export const TECHNOLOGIES: Technology[] = [
     label: "Next.js",
   },
   {
+    href: "https://next-auth.js.org/",
+    logoPath: "/technologies/next-auth.png",
+    label: "NextAuth",
+  },
+  {
     href: "https://tailwindcss.com/",
     logoPath: "/technologies/tailwind.png",
     label: "Tailwind CSS",
@@ -93,9 +98,48 @@ export const TECHNOLOGIES: Technology[] = [
     label: "Express.js",
   },
   {
+    href: "https://nestjs.com/",
+    logoPath: "/technologies/nest.png",
+    label: "NestJS",
+  },
+  {
     href: "https://www.djangoproject.com/",
     logoPath: "/technologies/django.png",
     label: "Django",
+  },
+  {
+    href: "https://www.django-rest-framework.org/",
+    logoPath: "/technologies/drf.png",
+    label: "Django REST Framework",
+  },
+  {
+    href: "https://orpc.dev/",
+    logoPath: "/technologies/orpc.png",
+    label: "ORPC",
+  },
+
+  // 🗄 Databases & ORM
+  {
+    href: "https://www.postgresql.org/",
+    logoPath: "/technologies/postgres.png",
+    label: "PostgreSQL",
+  },
+  {
+    href: "https://www.mysql.com/",
+    logoPath: "/technologies/mysql.png",
+    label: "MySQL",
+  },
+  {
+    href: "https://orm.drizzle.team/",
+    logoPath: "/technologies/drizzle.png",
+    label: "Drizzle ORM",
+  },
+
+  // 🔐 Authentication
+  {
+    href: "https://www.better-auth.com/",
+    logoPath: "/technologies/better-auth.png",
+    label: "Better Auth",
   },
 
   // 🛠 Tooling & Package Managers
