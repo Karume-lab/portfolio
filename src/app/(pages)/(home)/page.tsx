@@ -3,6 +3,7 @@ import {
   Certifications,
   ExperienceTimeline,
   HeroSection,
+  Inspos,
   Projects,
   ReachOut,
   RecommendationLetters,
@@ -21,6 +22,7 @@ const HomePage = () => {
       <ExperienceTimeline />
       <RecommendationLetters />
       <Projects />
+      <Inspos />
       <ReachOut />
     </div>
   );

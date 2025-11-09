@@ -42,7 +42,10 @@ const Projects = () => {
             thumbnailPath,
             title,
           }) => (
-            <Card key={title} className="overflow-hidden flex flex-col p-0 hover-to-reveal">
+            <Card
+              key={title}
+              className="overflow-hidden flex flex-col p-0 hover-to-reveal"
+            >
               <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
                 <Image src={thumbnailPath} alt={title} fill priority />
               </div>
@@ -111,7 +114,7 @@ const Projects = () => {
       {!path.includes("projects") && (
         <Button asChild className="float-right my-4" variant={"link"}>
           <Link href={"/projects"}>
-            <span>View more projects</span>
+            More projects
             <ArrowRight />
           </Link>
         </Button>
