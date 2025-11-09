@@ -12,11 +12,11 @@ import { Button } from "@/components/ui/button";
 const contactTags = [
   { label: "Website Development", x: "20%", y: "20%" },
   { label: "Mobile Apps", x: "70%", y: "25%" },
-  { label: "Business Solutions", x: "25%", y: "75%" },
-  { label: "Digital Strategy", x: "70%", y: "50%" },
+  { label: "UI/UX", x: "25%", y: "75%" },
+  { label: "Analytic Dashboards", x: "70%", y: "50%" },
   { label: "Brand Websites", x: "40%", y: "40%" },
-  { label: "E-Commerce Stores", x: "35%", y: "55%" },
-  { label: "Custom Software", x: "55%", y: "10%" },
+  { label: "E-Commerce Software", x: "15%", y: "55%" },
+  { label: "SEO Optimization", x: "55%", y: "10%" },
 ];
 
 const ReachOut = () => {
@@ -80,7 +80,7 @@ const ReachOut = () => {
             >
               <MousePointer2 className="size-5 sm:size-6 fill-primary text-primary" />
               <motion.span
-                className="ml-5 -mt-4 backdrop-blur-sm px-2 py-0.5 rounded-full bg-primary-foreground border-primary border sm:text-xs"
+                className="ml-5 -mt-4 backdrop-blur-sm px-2 py-0.5 rounded-full text-primary bg-primary-foreground border-primary border sm:text-xs"
                 transition={{ duration: 0.3 }}
               >
                 Karume
