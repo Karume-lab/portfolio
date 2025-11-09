@@ -1,12 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, Asterisk } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import z from "zod/v3";
-
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -15,7 +14,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -25,11 +23,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Spinner } from "@/components/ui/spinner"; // ShadCN Spinner
 import { Textarea } from "@/components/ui/textarea";
 
 const contactMeSchema = z.object({
   name: z.string().min(1, "Please enter your name"),
-  email: z.string().email("Please enter a valid email address"),
+  email: z.email("Please enter a valid email address"),
   message: z.string().min(1, "Please write a message"),
 });
 
@@ -86,9 +85,9 @@ const ContactMeFormDialog = () => {
 
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Let’s Connect</DialogTitle>
+          <DialogTitle>Let's Connect</DialogTitle>
           <DialogDescription>
-            Fill out the form below, and I’ll get back to you soon.
+            Fill out the form below, and I'll get back to you soon.
           </DialogDescription>
         </DialogHeader>
 
@@ -102,9 +101,7 @@ const ContactMeFormDialog = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Name <Asterisk size={10} />
-                  </FormLabel>
+                  <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input placeholder="John the Recruiter" {...field} />
                   </FormControl>
@@ -118,9 +115,7 @@ const ContactMeFormDialog = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Email <Asterisk size={10} />
-                  </FormLabel>
+                  <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input
                       type="email"
@@ -138,9 +133,7 @@ const ContactMeFormDialog = () => {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Message <Asterisk size={10} />
-                  </FormLabel>
+                  <FormLabel>Message</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="I would like to hire you, when can you start?"
@@ -154,13 +147,7 @@ const ContactMeFormDialog = () => {
             />
 
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? (
-                <>
-                  <Loader2 className="mr-2 size-4 animate-spin" /> Sending...
-                </>
-              ) : (
-                "Send Message"
-              )}
+              {loading ? <Spinner className="h-4 w-4" /> : "Send Message"}
             </Button>
           </form>
         </Form>

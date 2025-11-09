@@ -1,14 +1,17 @@
 import { ExternalLink } from "lucide-react";
 import type { Route } from "next";
 import Link from "next/link";
+import { SectionHeader } from "@/components";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { inspos } from "@/data/inspos";
-import SectionHeader from "../core/SectionHeader";
 
 const Inspos = () => {
   return (
     <section id="inspos" className="px-4 md:px-8 py-12">
-      <SectionHeader title="GIVE CREDIT WHERE CREDIT IS DUE." className="text-center" />
+      <SectionHeader
+        title="GIVE CREDIT WHERE CREDIT IS DUE."
+        className="text-center"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {inspos.map((inspo) => (

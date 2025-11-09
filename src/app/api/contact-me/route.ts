@@ -17,7 +17,7 @@ export const POST = async (req: Request) => {
       from: `"${name}" <${process.env.EMAIL_ADDRESS}>`,
       to: process.env.EMAIL_ADDRESS,
       replyTo: email,
-      subject: `New message from ${name}`,
+      subject: `New message from ${name} from your portfolio.`,
       text: `
             Name: ${name}
             Email: ${email}
@@ -36,7 +36,7 @@ export const POST = async (req: Request) => {
         error:
           "An error occurred while sending your message. Please wait and try again.",
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 };

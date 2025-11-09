@@ -15,6 +15,7 @@ import ReachOut from "@/components/home/ReachOut";
 import TechnologiesMarquee from "@/components/home/TechnologiesMarquee";
 import Inspos from "./home/Inspos";
 import RecommendationLetters from "./home/RecommendationLetters";
+import { SubscribeForm } from "./home/SubscribeForm";
 
 export {
   // core
@@ -36,4 +37,5 @@ export {
   ReachOut,
   RecommendationLetters,
   Inspos,
+  SubscribeForm,
 };
