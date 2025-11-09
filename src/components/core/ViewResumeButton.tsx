@@ -11,7 +11,7 @@ const ViewResumeButton = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Résumé
+        Résumé
         <ExternalLink className="w-4 h-4" />
       </Link>
     </Button>
