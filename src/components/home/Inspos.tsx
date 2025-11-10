@@ -7,7 +7,7 @@ import { inspos } from "@/data/inspos";
 
 const Inspos = () => {
   return (
-    <section id="inspos" className="px-4 md:px-8 py-12">
+    <section id="inspos" className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
       <SectionHeader
         title="GIVE CREDIT WHERE CREDIT IS DUE."
         className="text-center"
@@ -26,7 +26,7 @@ const Inspos = () => {
                 <CardTitle className="text-lg font-semibold">
                   {inspo.title}
                 </CardTitle>
-                <ExternalLink className="w-4 h-4 opacity-70" />
+                <ExternalLink className="size-4 opacity-70" />
               </CardHeader>
 
               <CardContent>
