@@ -1,9 +1,9 @@
-import { Projects } from "@/components";
+import { ProjectsGrid } from "@/components";
 
 const ProjectsPage = () => {
   return (
-    <div className="mt-4">
-      <Projects />
+    <div className="my-24">
+      <ProjectsGrid />
     </div>
   );
 };
