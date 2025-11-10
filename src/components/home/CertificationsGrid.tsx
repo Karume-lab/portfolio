@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dialog";
 import { CERTIFICATIONS, type Certificate } from "@/data";
 
-const Certifications = () => {
+const CertificationsGrid = () => {
   const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -33,7 +33,7 @@ const Certifications = () => {
       className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"
       id="certifications"
     >
-      <SectionHeader title="WHERE'S THE PROOF?" />
+      <SectionHeader title="WHERE'S THE PROOF?" className="text-center" />
 
       <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
         {CERTIFICATIONS.map((cert) => (
@@ -115,4 +115,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default CertificationsGrid;
