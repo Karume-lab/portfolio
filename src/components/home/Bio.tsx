@@ -3,7 +3,7 @@ import SectionHeader from "@/components/core/SectionHeader";
 const Bio = () => {
   return (
     <section
-      className="bg-primary text-primary-foreground px-6 py-12 sm:px-12 md:px-16 lg:px-24 lg:py-24"
+      className="bg-primary/90 text-primary-foreground px-6 py-12 sm:px-12 md:px-16 lg:px-24 lg:py-24"
       id="bio"
     >
       <SectionHeader title="WHO AM I?" />
