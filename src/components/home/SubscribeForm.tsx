@@ -24,7 +24,7 @@ export const SubscribeForm = () => {
     resolver: zodResolver(subscribeSchema),
   });
 
-  const onSubmit = async (data: SubscribeSchema) => {
+  const handleOnSubmit = async (data: SubscribeSchema) => {
     setLoading(true);
     try {
       const res = await fetch("/api/contact-me", {
@@ -51,14 +51,16 @@ export const SubscribeForm = () => {
     }
   };
 
-  const onError = (errors: typeof form.formState.errors) => {
+  const handleOnError = (errors: typeof form.formState.errors) => {
     if (errors.email) toast.error(errors.email.message);
   };
 
   return (
     <div className="w-full max-w-md">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold">Subscribe to my newsletter</h3>
+        <h3 className="text-lg font-semibold">
+          You, yes you. SUBSCRIBE TO MY NEWSLETTER!
+        </h3>
         <p className="text-sm text-muted-foreground">
           Get updates on my latest projects, blog posts, and more. No spam, just
           good stuff!
@@ -67,7 +69,7 @@ export const SubscribeForm = () => {
 
       <Form {...form}>
         <form
-          onSubmit={form.handleSubmit(onSubmit, onError)}
+          onSubmit={form.handleSubmit(handleOnSubmit, handleOnError)}
           className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full"
         >
           <FormField
@@ -87,7 +89,7 @@ export const SubscribeForm = () => {
             )}
           />
           <Button type="submit" variant="secondary" disabled={loading}>
-            {loading ? <Spinner className="h-4 w-4" /> : "Subscribe"}
+            {loading ? <Spinner className="size-4" /> : "Subscribe"}
           </Button>
         </form>
       </Form>
