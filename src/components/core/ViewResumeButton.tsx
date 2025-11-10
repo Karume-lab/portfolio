@@ -11,8 +11,8 @@ const ViewResumeButton = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Résumé
-        <ExternalLink className="w-4 h-4" />
+        RÉSUMÉ
+        <ExternalLink className="size-4" />
       </Link>
     </Button>
   );
