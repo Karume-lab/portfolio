@@ -1,10 +1,11 @@
 import {
   Bio,
-  Certifications,
+  BlogsList,
+  CertificationsGrid,
   ExperienceTimeline,
   HeroSection,
   Inspos,
-  Projects,
+  ProjectsGrid,
   ReachOut,
   RecommendationLetters,
   TechnologiesMarquee,
@@ -18,10 +19,11 @@ const HomePage = () => {
         <Bio />
       </div>
       <TechnologiesMarquee />
-      <Certifications />
+      <CertificationsGrid />
       <ExperienceTimeline />
       <RecommendationLetters />
-      <Projects />
+      <ProjectsGrid />
+      <BlogsList />
       <Inspos />
       <ReachOut />
     </div>

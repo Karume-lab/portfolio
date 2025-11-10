@@ -1,15 +1,16 @@
-import { TECHNOLOGIES } from "@/data";
+import { PROJECTS, SKILLS, TECHNOLOGIES } from "@/data";
+import { getBlogs } from "@/lib/blogs";
 import "@/styles";
 import type { Metadata } from "next";
 
 export const metadataConfig: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? ""),
   title: {
-    default: "Karume | Portfolio",
-    template: "%s | Karume",
+    default: "Portfolio | Karume",
+    template: "Portfolio | %s",
   },
   description:
-    "Portfolio of Daniel Karume — Software Developer. Specializing in React.js, Next.js, and React Native.",
+    "Portfolio of Daniel Karume  -  Software Developer. Specializing in React.js, Next.js, and React Native.",
   keywords: [
     "Daniel Karume",
     "Portfolio",
@@ -21,6 +22,12 @@ export const metadataConfig: Metadata = {
     "Rastuc Technologies",
     "Kenya Developer",
     ...TECHNOLOGIES.map(({ label }) => label),
+    ...SKILLS.map(({ title }) => title),
+    ...SKILLS.map(({ description }) => description),
+    ...PROJECTS.map(({ title }) => title),
+    ...PROJECTS.map(({ description }) => description),
+    ...(await getBlogs().then((data) => data.map((d) => d.title))),
+    ...(await getBlogs().then((data) => data.map((d) => d.description))),
   ],
   authors: [{ name: "Daniel Karume", url: process.env.NEXT_PUBLIC_APP_URL }],
   creator: "Daniel Karume",
@@ -39,7 +46,7 @@ export const metadataConfig: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Daniel Karume | Software Developer",
-    description: "Portfolio of Daniel Karume — Software Developer.",
+    description: "Portfolio of Daniel Karume  -  Software Developer.",
     creator: "@karume_lab",
   },
 

@@ -12,6 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { TypographyP } from "@/components/ui/typography";
 import { CERTIFICATIONS, type Certificate } from "@/data";
 
 const CertificationsGrid = () => {
@@ -58,9 +59,9 @@ const CertificationsGrid = () => {
             </CardHeader>
 
             <CardContent className="space-y-2 flex-1">
-              <p className="text-sm text-muted-foreground text-center">
+              <TypographyP className="text-sm text-muted-foreground text-center">
                 {cert.description}
-              </p>
+              </TypographyP>
               <div className="flex flex-wrap gap-2 justify-center">
                 {cert.skills.map((skill) => (
                   <Badge

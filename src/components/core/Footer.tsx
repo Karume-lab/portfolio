@@ -2,7 +2,7 @@ import { SubscribeForm } from "@/components";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12 px-6">
+    <footer className="bg-primary text-primary-foreground text-center md:text-left py-12 px-6">
       <div className="flex flex-col md:flex-row md:justify-between gap-8">
         <div>
           Designed and Made with{" "}

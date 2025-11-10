@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { TypographyP } from "@/components/ui/typography";
 
 const OpenInLargeScreenPopover = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,14 +47,14 @@ const OpenInLargeScreenPopover = () => {
           </motion.div>
         </PopoverTrigger>
         <PopoverContent className="max-w-xs bg-primary-foreground/10 backdrop-blur-xl border-none shadow-xl rounded-xl">
-          <p className="text-sm font-medium p-2">
+          <TypographyP className="text-sm font-medium p-2">
             I noticed you are using a small screen. It would be a shame for you
             to miss the hover effects and easter eggs,{" "}
             <span className="font-semibold text-primary">
               especially if you are a recruiter
             </span>
             ! Try opening it on a larger screen for the best experience.
-          </p>
+          </TypographyP>
         </PopoverContent>
       </Popover>
     </div>

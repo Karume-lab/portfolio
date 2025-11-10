@@ -8,6 +8,7 @@ import SectionHeader from "@/components/core/SectionHeader";
 import ContactMeFormDialog from "@/components/home/ContactMeDialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
 
 const contactTags = [
   { label: "Website Development", x: "20%", y: "20%" },
@@ -90,12 +91,12 @@ const ReachOut = () => {
         </div>
 
         <div className="relative z-10 max-w-xl w-full text-center lg:text-left">
-          <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
+          <TypographyH2 className="text-2xl sm:text-3xl font-semibold mb-3">
             I am ready to build your next product
-          </h2>
-          <p className="mb-8 text-sm sm:text-base">
+          </TypographyH2>
+          <TypographyP className="mb-8 text-sm sm:text-base">
             Feel free to reach out to me!
-          </p>
+          </TypographyP>
 
           <div className="flex justify-center lg:justify-start gap-3 flex-wrap">
             <Button variant="secondary" asChild>

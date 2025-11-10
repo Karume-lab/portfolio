@@ -147,7 +147,7 @@ const ContactMeFormDialog = () => {
             />
 
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? <Spinner className="h-4 w-4" /> : "Send Message"}
+              {loading ? <Spinner className="size-4" /> : "Send Message"}
             </Button>
           </form>
         </Form>

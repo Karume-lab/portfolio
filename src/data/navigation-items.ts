@@ -2,10 +2,13 @@ import {
   Award,
   Briefcase,
   Code,
+  Home,
+  Library,
   type LucideIcon,
   Mail,
   Stars,
-  User
+  ThumbsUp,
+  User,
 } from "lucide-react";
 import type { Route } from "next";
 
@@ -16,10 +19,13 @@ export interface NavigationItem {
 }
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
+  { href: "/", label: "Home", icon: Home },
   { href: "/#bio", label: "Bio", icon: User },
   { href: "/#certifications", label: "Certifications", icon: Award },
   { href: "/#experience", label: "Experience", icon: Briefcase },
+  { href: "/#recommendations", label: "Recommendations", icon: ThumbsUp },
   { href: "/#projects", label: "Projects", icon: Code },
   { href: "/#reach-out", label: "Reach Out", icon: Mail },
   { href: "/#inspos", label: "Inspos", icon: Stars },
+  { href: "/#blogs", label: "Blogs", icon: Library },
 ];

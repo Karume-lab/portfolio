@@ -10,6 +10,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { TypographyP } from "@/components/ui/typography";
 import { SKILLS, type Skill } from "@/data";
 import MeWEBP from "~/public/core/me.webp";
 
@@ -93,7 +94,9 @@ const HeroSection = () => {
               </PopoverTrigger>
               <PopoverContent className="max-w-sm bg-primary-foreground/10 backdrop-blur-xl border-none">
                 <SectionHeader title={title} className="text-center" />
-                <p className="text-sm font-semibold">{description}</p>
+                <TypographyP className="text-sm font-semibold">
+                  {description}
+                </TypographyP>
               </PopoverContent>
             </Popover>
           </motion.div>

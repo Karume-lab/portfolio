@@ -3,6 +3,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { SectionHeader } from "@/components";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { TypographyP } from "@/components/ui/typography";
 import { inspos } from "@/data/inspos";
 
 const Inspos = () => {
@@ -30,9 +31,9 @@ const Inspos = () => {
               </CardHeader>
 
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <TypographyP className="text-sm text-muted-foreground">
                   {inspo.description}
-                </p>
+                </TypographyP>
               </CardContent>
             </Card>
           </Link>

@@ -1,3 +1,5 @@
+import { BlogListItem } from "@/components/blogs/BlogListItem";
+import TableOfContentsCard from "@/components/blogs/TableOfContentsCard";
 import BackToTopButton from "@/components/core/BackToTopButton";
 import ChangeMetadataTitleOnBlur from "@/components/core/ChangeMetadataTitleOnBlur";
 import Footer from "@/components/core/Footer";
@@ -5,14 +7,16 @@ import HeroSection from "@/components/core/HeroSection";
 import NavigationPill from "@/components/core/NavigationPill";
 import ScrollProgress from "@/components/core/ScrollProgress";
 import SectionHeader from "@/components/core/SectionHeader";
-import DownloadResumeButton from "@/components/core/ViewResumeButton";
+import ViewResumeButton from "@/components/core/ViewResumeButton";
 import Bio from "@/components/home/Bio";
-import Certifications from "@/components/home/Certifications";
+import CertificationsGrid from "@/components/home/CertificationsGrid";
 import ContactMeFormDialog from "@/components/home/ContactMeDialog";
 import ExperienceTimeline from "@/components/home/ExperienceTimeline";
-import Projects from "@/components/home/Projects";
 import ReachOut from "@/components/home/ReachOut";
 import TechnologiesMarquee from "@/components/home/TechnologiesMarquee";
+import ProjectsGrid from "@/components/projects/ProjectsGrid";
+import BlogsList from "./blogs/BlogsList";
+import { BlogsProvider } from "./blogs/BlogsProvider";
 import Inspos from "./home/Inspos";
 import RecommendationLetters from "./home/RecommendationLetters";
 import { SubscribeForm } from "./home/SubscribeForm";
@@ -25,17 +29,23 @@ export {
   SectionHeader,
   BackToTopButton,
   ScrollProgress,
-  DownloadResumeButton,
+  ViewResumeButton,
   Footer,
+  BlogsProvider,
   // home
   Bio,
-  Certifications,
+  CertificationsGrid,
   TechnologiesMarquee,
   ExperienceTimeline,
-  Projects,
   ContactMeFormDialog,
   ReachOut,
   RecommendationLetters,
   Inspos,
   SubscribeForm,
+  // projects
+  ProjectsGrid,
+  // blogs
+  BlogsList,
+  BlogListItem,
+  TableOfContentsCard,
 };

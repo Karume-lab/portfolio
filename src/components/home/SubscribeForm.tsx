@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
 
 const subscribeSchema = z.object({
   email: z.email({ message: "Please enter a valid email" }),
@@ -55,16 +56,25 @@ export const SubscribeForm = () => {
     if (errors.email) toast.error(errors.email.message);
   };
 
+  useEffect(() => {
+    const errors = form.formState.errors;
+    if (Object.keys(errors).length > 0) {
+      const timer = setTimeout(() => form.clearErrors(), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [form.formState.errors, form]);
+
   return (
     <div className="w-full max-w-md">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold">
+        <TypographyH2 className="text-lg font-semibold">
           You, yes you. SUBSCRIBE TO MY NEWSLETTER!
-        </h3>
-        <p className="text-sm text-muted-foreground">
-          Get updates on my latest projects, blog posts, and more. No spam, just
-          good stuff!
-        </p>
+        </TypographyH2>
+        <TypographyP className="text-sm text-muted-foreground">
+          Get updates on my latest projects, blog posts, and behind-the-scenes
+          insights. No spam, just valuable content delivered straight to your
+          inbox!
+        </TypographyP>
       </div>
 
       <Form {...form}>
@@ -76,7 +86,7 @@ export const SubscribeForm = () => {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="flex-1 min-w-[250px]">
+              <FormItem className="flex-1 w-full min-w-[250px]">
                 <FormControl>
                   <Input
                     placeholder="Your email"
@@ -88,7 +98,12 @@ export const SubscribeForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" variant="secondary" disabled={loading}>
+          <Button
+            type="submit"
+            variant="secondary"
+            disabled={loading}
+            className="w-full sm:w-auto"
+          >
             {loading ? <Spinner className="size-4" /> : "Subscribe"}
           </Button>
         </form>

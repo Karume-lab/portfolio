@@ -23,13 +23,13 @@ export const SKILLS: Skill[] = [
   {
     title: "FRONTEND",
     description:
-      "Designs responsive, accessible UIs with Next.js, Tailwind CSS, and modern component libraries — blending usability with performance.",
+      "Designs responsive, accessible UIs with Next.js, Tailwind CSS, and modern component libraries  -  blending usability with performance.",
     icon: Code2,
   },
   {
     title: "BACKEND",
     description:
-      "Builds scalable APIs and database solutions using Django, GraphQL, and Express.js — ensuring reliability and efficiency in production.",
+      "Builds scalable APIs and database solutions using Django, GraphQL, and Express.js  -  ensuring reliability and efficiency in production.",
     icon: Server,
   },
   {
@@ -41,7 +41,7 @@ export const SKILLS: Skill[] = [
   {
     title: "BLOCKCHAIN",
     description:
-      "Develops and tests Solidity smart contracts with Hardhat — creating secure, transparent, and decentralized applications.",
+      "Develops and tests Solidity smart contracts with Hardhat  -  creating secure, transparent, and decentralized applications.",
     icon: Network,
   },
 ];
