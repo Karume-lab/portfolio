@@ -4,5 +4,6 @@ export interface BlogFrontmatter {
   date: string;
   slug: string;
   tags: string[];
+  "TL;DR": string;
   readingTime: string;
 }

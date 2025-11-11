@@ -38,7 +38,7 @@ const BlogDetailPage: React.FC<BlogDetailParams> = async ({ params }) => {
 
   return (
     <div className="max-w-7xl w-full mx-auto px-6 sm:px-8 lg:px-12 my-24">
-      <header className="mb-8">
+      <header>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
           <span className="flex items-center gap-1">
             <Calendar className="size-4" />
@@ -57,13 +57,17 @@ const BlogDetailPage: React.FC<BlogDetailParams> = async ({ params }) => {
           {blog.description}
         </TypographyP>
 
-        <div className="flex gap-2 flex-wrap mt-4">
+        <div className="flex gap-2 flex-wrap">
           {blog.tags.map((tag) => (
             <Badge key={tag} variant="secondary" className="uppercase">
               {tag}
             </Badge>
           ))}
         </div>
+
+        <TypographyP className="italic text-muted-foreground">
+          <strong>TL;DR:</strong> {blog["TL;DR"]}
+        </TypographyP>
       </header>
 
       <article>{compiledMDX.content}</article>
