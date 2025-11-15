@@ -113,7 +113,7 @@ export const TECHNOLOGIES: Technology[] = [
     label: "Django REST Framework",
   },
   {
-    href: "https://orpc.dev/",
+    href: "https://orpc.unnoq.com/",
     logoPath: "/technologies/orpc.png",
     label: "ORPC",
   },
