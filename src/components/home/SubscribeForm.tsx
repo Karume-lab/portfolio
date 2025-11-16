@@ -104,7 +104,7 @@ export const SubscribeForm = () => {
             disabled={loading}
             className="w-full sm:w-auto"
           >
-            {loading ? <Spinner className="size-4" /> : "Subscribe"}
+            {loading ? <Spinner className="size-4" /> : "Involve Me!"}
           </Button>
         </form>
       </Form>
