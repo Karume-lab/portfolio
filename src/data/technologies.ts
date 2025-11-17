@@ -134,6 +134,11 @@ export const TECHNOLOGIES: Technology[] = [
     logoPath: "/technologies/drizzle.png",
     label: "Drizzle ORM",
   },
+  {
+    href: "https://www.prisma.io/",
+    logoPath: "/technologies/prisma.png",
+    label: "Prisma",
+  },
 
   // 🔐 Authentication
   {
