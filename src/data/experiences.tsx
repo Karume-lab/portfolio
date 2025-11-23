@@ -29,7 +29,7 @@ Enhanced UI performance and modernized legacy code.`,
     description: `
 Built responsive UIs with Next.js and Tailwind CSS.  
 Integrated APIs for real-time and static data flows.`,
-    status: "in-progress",
+    status: "completed",
     icon: <Code2 />,
   },
   {
@@ -39,7 +39,7 @@ Integrated APIs for real-time and static data flows.`,
     description: `
 Guided junior developers through code reviews and pair programming.  
 Improved team workflows with Trello.`,
-    status: "in-progress",
+    status: "completed",
     icon: <Users />,
   },
   {
@@ -49,7 +49,16 @@ Improved team workflows with Trello.`,
     description: `
 Led development of React Native apps using Nativewind.  
 Published apps to the Play Store and coached new contributors.`,
-    status: "in-progress",
+    status: "completed",
     icon: <Smartphone />,
+  },
+  {
+    id: 6,
+    title: "Mid-Level Software Developer",
+    date: "November 2025 - Present",
+    description: `
+Focused on frontend development, building a comprehensive dashboard and contributing to the Baykar mobile application.`,
+    status: "in-progress",
+    icon: <Code2 />,
   },
 ];
