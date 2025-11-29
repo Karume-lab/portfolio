@@ -54,10 +54,19 @@ Published apps to the Play Store and coached new contributors.`,
   },
   {
     id: 6,
-    title: "Mid-Level Software Developer",
+    title: "Mid-Level Software Developer - Baykart",
     date: "November 2025 - Present",
     description: `
 Focused on frontend development, building a comprehensive dashboard and contributing to the Baykar mobile application.`,
+    status: "in-progress",
+    icon: <Code2 />,
+  },
+  {
+    id: 7,
+    title: "Student Trainer - CodeYetu",
+    date: "November 2025 - Present",
+    description: `
+Facilitating coding bootcamps to equip students with core web development skills.`,
     status: "in-progress",
     icon: <Code2 />,
   },
