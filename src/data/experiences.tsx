@@ -54,20 +54,32 @@ Published apps to the Play Store and coached new contributors.`,
   },
   {
     id: 6,
-    title: "Mid-Level Software Developer - Baykart",
-    date: "November 2025 - Present",
+    title: "Mobile Developer - Baykart",
+    date: "Nov 2025 - Present",
     description: `
-Focused on frontend development, building a comprehensive dashboard and contributing to the Baykar mobile application.`,
+Refactored mobile codebases to boost performance and maintainability.  
+Built key app features and improved user experience.`,
+    status: "in-progress",
+    icon: <Smartphone />,
+  },
+  {
+    id: 7,
+    title: "Frontend Developer - Baykart",
+    date: "Nov 2025 - Present",
+    description: `
+Improved admin dashboard structure through code refactoring.  
+Developed essential dashboard features for smoother workflows.`,
     status: "in-progress",
     icon: <Code2 />,
   },
   {
-    id: 7,
-    title: "Student Trainer - CodeYetu",
-    date: "November 2025 - Present",
+    id: 8,
+    title: "Web Development Trainer - CodeYetu",
+    date: "Oct 2025 - Present",
     description: `
-Facilitating coding bootcamps to equip students with core web development skills.`,
+Taught HTML, CSS, and JavaScript to young learners.  
+Led hands-on projects to build confidence and problem-solving skills.`,
     status: "in-progress",
-    icon: <Code2 />,
+    icon: <Users />,
   },
 ];
